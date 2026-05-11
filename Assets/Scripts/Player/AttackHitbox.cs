@@ -14,8 +14,20 @@ public class AttackHitbox : MonoBehaviour
     [Header("References")]
     public PlayerController owner;
 
+    private PlayerEnergy _ownerEnergy;
+
     // Enemies that were already hit
     private readonly HashSet<Collider2D> _hitTargets = new HashSet<Collider2D>();
+
+    [Tooltip("Energy awarded to the owner when this hitbox connects. " +
+         "-1 = use PlayerEnergy.defaultEnergyPerHit.")]
+    public float energyGainOnHit = -1f;
+
+    private void Awake()
+    {
+        if (owner != null)
+            _ownerEnergy = owner.GetComponent<PlayerEnergy>();
+    }
 
     public void ActivateHitbox()
     {
@@ -60,6 +72,8 @@ public class AttackHitbox : MonoBehaviour
             PlayerController playerController = other.GetComponent<PlayerController>();
             playerController?.TakeDamage(damage, kb, causesKnockdown);
         }
+
+        _ownerEnergy?.OnHitLanded(energyGainOnHit);
     }
 }
 

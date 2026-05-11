@@ -1,5 +1,3 @@
-
-
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "BeatEmUp/PlayerStats")]

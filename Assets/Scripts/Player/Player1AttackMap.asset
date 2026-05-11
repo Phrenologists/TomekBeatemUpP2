@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70d4e0a87370bee4f8dfd331d39ac11c, type: 3}
+  m_Name: Player1AttackMap
+  m_EditorClassIdentifier: 
+  lightAttackGround: {fileID: 11400000, guid: 9453c8e970aa8ab4589ba777d01dde48, type: 2}
+  heavyAttackGround: {fileID: 11400000, guid: 0996e47ea5c43e34797692f1df9756b8, type: 2}
+  leftTriggerGround: {fileID: 11400000, guid: e29edfe0806597d4888d3d18aba1c21e, type: 2}
+  rightTriggerGround: {fileID: 11400000, guid: 3590d0dceb2d8074fb0c0c2ecf707127, type: 2}
+  lightAttackAir: {fileID: 11400000, guid: b6f0b5c29329bc5468faf8c3f4c47c9a, type: 2}
+  heavyAttackAir: {fileID: 11400000, guid: 838690e97c9ea10468297022bc040188, type: 2}
+  leftTriggerAir: {fileID: 11400000, guid: e29edfe0806597d4888d3d18aba1c21e, type: 2}
+  rightTriggerAir: {fileID: 11400000, guid: cd9bbea1d0929f34fb9d17ad44615418, type: 2}

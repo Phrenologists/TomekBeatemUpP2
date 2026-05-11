@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26c65cbbc112bd2488dc99bd513c2c8e, type: 3}
   m_Name: Enemy1Stats
   m_EditorClassIdentifier: 
-  maxHealth: 60
+  maxHealth: 120
   walkSpeed: 2.5
   depthSpeed: 2
   acceleration: 15

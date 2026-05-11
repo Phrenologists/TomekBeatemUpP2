@@ -213,9 +213,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 15
-  knockback: {x: 4, y: 3}
+  knockback: {x: 16, y: 10}
   causesKnockdown: 1
   owner: {fileID: 1926525512}
+  energyGainOnHit: -1
 --- !u!1 &164444270
 GameObject:
   m_ObjectHideFlags: 0
@@ -327,8 +328,8 @@ Transform:
   m_GameObject: {fileID: 415500733}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.2787, y: -0.6487, z: 0}
-  m_LocalScale: {x: 81.278046, y: 7.4458885, z: 1}
+  m_LocalPosition: {x: -3.2787, y: -5.4182, z: 0}
+  m_LocalScale: {x: 81.278046, y: 16.984818, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -410,7 +411,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2056596767}
   - {fileID: 89763937}
   m_Father: {fileID: 1926525511}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -748,7 +748,7 @@ Transform:
   m_GameObject: {fileID: 1085633595}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.03, y: 1.2, z: 0}
+  m_LocalPosition: {x: 10.7, y: 1.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -880,6 +880,7 @@ MonoBehaviour:
   knockback: {x: 4, y: 3}
   causesKnockdown: 0
   owner: {fileID: 0}
+  energyGainOnHit: -1
 --- !u!61 &1270865030
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1092,6 +1093,8 @@ GameObject:
   - component: {fileID: 1926525514}
   - component: {fileID: 1926525513}
   - component: {fileID: 1926525512}
+  - component: {fileID: 1926525517}
+  - component: {fileID: 1926525518}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1112,6 +1115,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 2056596767}
   - {fileID: 452686955}
   - {fileID: 1519802914}
   m_Father: {fileID: 164444271}
@@ -1206,7 +1210,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1926525513}
         m_TargetAssemblyTypeName: PlayerInputHandler, Assembly-CSharp
-        m_MethodName: OnAttack
+        m_MethodName: OnLightAttack
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1238,7 +1242,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1926525513}
         m_TargetAssemblyTypeName: PlayerInputHandler, Assembly-CSharp
-        m_MethodName: OnSpecial
+        m_MethodName: OnRightTrigger
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1250,6 +1254,54 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 8d513814-eb2f-455d-87b7-cafb8623c739
     m_ActionName: Gameplay/Special
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1926525513}
+        m_TargetAssemblyTypeName: PlayerInputHandler, Assembly-CSharp
+        m_MethodName: OnHeavyAttack
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: e110b858-c26f-458d-9968-c2c69bf57f8a
+    m_ActionName: Gameplay/HeavyAttack
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1926525513}
+        m_TargetAssemblyTypeName: PlayerInputHandler, Assembly-CSharp
+        m_MethodName: OnLeftTrigger
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: c7f8e1fa-780b-4aa4-b7fa-b025040cb53e
+    m_ActionName: Gameplay/LeftTrigger
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1926525513}
+        m_TargetAssemblyTypeName: PlayerInputHandler, Assembly-CSharp
+        m_MethodName: OnRightTrigger
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 2f17ed65-651d-4b99-8ef1-06dc0605ed83
+    m_ActionName: Gameplay/RightTrigger
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Gameplay
@@ -1327,6 +1379,35 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1926525517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926525510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cc4aea6317d74149aa23cc9247ed480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackMap: {fileID: 11400000, guid: d9005fc1c611e6b4d8bbfa32ba483045, type: 2}
+  animator: {fileID: 452686956}
+  runtimeHitbox: {fileID: 2056596769}
+--- !u!114 &1926525518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926525510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eec6c56f33595a4b9372803779b4821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxEnergy: 100
+  defaultEnergyPerHit: 10
 --- !u!1 &2056596766
 GameObject:
   m_ObjectHideFlags: 0
@@ -1339,7 +1420,7 @@ GameObject:
   - component: {fileID: 2056596769}
   - component: {fileID: 2056596768}
   m_Layer: 0
-  m_Name: Hitbox1
+  m_Name: RuntimeHitbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1354,11 +1435,11 @@ Transform:
   m_GameObject: {fileID: 2056596766}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.43, y: 0.52, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 452686955}
+  m_Father: {fileID: 1926525511}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2056596768
 BoxCollider2D:
@@ -1421,6 +1502,7 @@ MonoBehaviour:
   knockback: {x: 3, y: 4}
   causesKnockdown: 0
   owner: {fileID: 1926525512}
+  energyGainOnHit: -1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

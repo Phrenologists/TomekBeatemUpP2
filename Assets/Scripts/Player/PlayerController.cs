@@ -12,8 +12,10 @@
 
 using System.Collections;
 using UnityEngine;
+using static UnityEditor.Rendering.CameraUI;
 
 [RequireComponent(typeof(PlayerInputHandler))]
+[RequireComponent(typeof(PlayerAttackHandler))]
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerController : MonoBehaviour
 {
@@ -41,6 +43,7 @@ public class PlayerController : MonoBehaviour
 
     
     private PlayerInputHandler _input;
+    private PlayerAttackHandler _attackHandler;
     private Rigidbody2D _rb;
 
     
@@ -71,7 +74,12 @@ public class PlayerController : MonoBehaviour
     private float _attackTimer;
     private bool _comboInputQueued;
 
-    
+    private AttackData _currentAttack;     // the active AttackData asset
+    private AttackPhase _attackPhase;       // Startup / Active / Recovery
+    private float _phaseTimer;        // countdown for current phase
+    private AttackData _queuedAttack;      // buffered input during recovery
+
+
     private float _hurtTimer;
     private int _currentHealth;
 
@@ -83,12 +91,24 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         _input = GetComponent<PlayerInputHandler>();
+        _attackHandler = GetComponent<PlayerAttackHandler>();
         _rb = GetComponent<Rigidbody2D>();
         _rb.gravityScale = 0f;
         _rb.freezeRotation = true;
 
         _currentHealth = stats.maxHealth;
         _groundY = transform.position.y;
+
+        _attackHandler.OnAttackSequenceEnded += () =>
+        {
+            // Only act if we're still in an attack state — a hit interrupt
+            // may have already moved us somewhere else.
+            if (CurrentState == PlayerStateID.Attacking ||
+                CurrentState == PlayerStateID.AirAttacking)
+            {
+                TransitionTo(IsGrounded ? PlayerStateID.Idle : PlayerStateID.Falling);
+            }
+        };
     }
 
     private void Update()
@@ -181,7 +201,7 @@ public class PlayerController : MonoBehaviour
         ApplyGroundMovement();
         TickJumpPhysics();
 
-        if (TryAirAttack()) return;
+        if (TryAttack()) return;
 
         if (!_input.JumpHeld && _jumpVelocity > 0f)
             _jumpVelocity = Mathf.MoveTowards(_jumpVelocity, 0f,
@@ -197,7 +217,7 @@ public class PlayerController : MonoBehaviour
         ApplyGroundMovement();
         TickFallPhysics();
 
-        if (TryAirAttack()) return;
+        if (TryAttack()) return;
 
         if (IsGrounded)
         {
@@ -230,6 +250,7 @@ public class PlayerController : MonoBehaviour
 
     private void TickAttacking()
     {
+        /*
         //For now, we lunge the character slightly when attacking, but it kinda feels weird tbh, I'll see if we do smth about it
         float lunge = (_facingRight ? 1f : -1f) * stats.attackMoveSpeed;
         _velX = Mathf.Lerp(_velX, lunge, 10f * Time.deltaTime);
@@ -255,15 +276,42 @@ public class PlayerController : MonoBehaviour
             _comboInputQueued = false;
             TransitionTo(PlayerStateID.Idle);
         }
+        */
+
+        float lunge = (_facingRight ? 1f : -1f) * _attackHandler.LungeSpeed;
+        _velX = Mathf.Lerp(_velX, lunge, 10f * Time.deltaTime);
+
+        Vector2 move = _attackHandler.CurrentMovement;
+        _velX = Mathf.Lerp(_velX, move.x, 10f * Time.deltaTime);
+        _velDepth = Mathf.Lerp(_velDepth, move.y, 10f * Time.deltaTime);
+        _groundY += _velDepth * Time.deltaTime;
+
+        if (_input.AnyAttackPressed && _input.LastAttackActionPressed != null)
+            _attackHandler.TryStartAttack(_input.LastAttackActionPressed, grounded: true);
+
+        _attackHandler.Tick(_facingRight);
     }
 
     private void TickAirAttacking()
     {
         TickFallPhysics();
+        /*
         _attackTimer -= Time.deltaTime;
 
         if (_attackTimer <= 0f || IsGrounded)
             TransitionTo(IsGrounded ? PlayerStateID.Idle : PlayerStateID.Falling);
+        */
+        Vector2 move = _attackHandler.CurrentMovement;
+        _velX = Mathf.Lerp(_velX, move.x, 10f * Time.deltaTime);
+
+
+        if (_input.AnyAttackPressed && _input.LastAttackActionPressed != null)
+            _attackHandler.TryStartAttack(_input.LastAttackActionPressed, grounded: false);
+
+        _attackHandler.Tick(_facingRight);
+
+        if (IsGrounded && !_attackHandler.IsAttacking)
+            TransitionTo(PlayerStateID.Idle);
     }
 
     private void TickHurt()
@@ -281,8 +329,19 @@ public class PlayerController : MonoBehaviour
 
     private void TickKnockedDown()
     {
+        /*
         _hurtTimer -= Time.deltaTime;
         if (_hurtTimer <= 0f)
+        {
+            _hurtTimer = stats.getUpDuration;
+            TransitionTo(PlayerStateID.GetUp);
+        }
+        */
+        if (!IsGrounded) TickFallPhysics();
+        _velX = Mathf.MoveTowards(_velX, 0f, stats.deceleration * Time.deltaTime);
+
+        _hurtTimer -= Time.deltaTime;
+        if (_hurtTimer <= 0f && IsGrounded)
         {
             _hurtTimer = stats.getUpDuration;
             TransitionTo(PlayerStateID.GetUp);
@@ -377,13 +436,33 @@ public class PlayerController : MonoBehaviour
 
     private bool TryAttack()
     {
+        /*
         if (!_input.AttackPressed) return false;
         _comboIndex = 0;
         _comboInputQueued = false;
         StartAttack();
         return true;
+        */
+        if (!_input.AnyAttackPressed) return false;
+        if (_input.LastAttackActionPressed == null) return false;
+
+        bool started = _attackHandler.TryStartAttack(
+            _input.LastAttackActionPressed,
+            grounded: IsGrounded);
+
+        if (started)
+        {
+            TransitionTo(IsGrounded
+                ? PlayerStateID.Attacking
+                : PlayerStateID.AirAttacking);
+            return true;
+        }
+
+        return false;
     }
 
+    //To zostalo z wczesniejszej wersji, jak nie bedzie potrzebne to usune
+    /*
     private bool TryAirAttack()
     {
         if (!_input.AttackPressed) return false;
@@ -391,6 +470,7 @@ public class PlayerController : MonoBehaviour
         TransitionTo(PlayerStateID.AirAttacking);
         return true;
     }
+    */
 
     private void StartAttack()
     {
@@ -402,7 +482,7 @@ public class PlayerController : MonoBehaviour
     private void TransitionTo(PlayerStateID next)
     {
         if (next == CurrentState) return;
-        OnExitState(CurrentState);
+        OnExitState(CurrentState, next);
         CurrentState = next;
         OnEnterState(next);
     }
@@ -416,7 +496,14 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void OnExitState(PlayerStateID state) { }
+    private void OnExitState(PlayerStateID exitState, PlayerStateID enterState) 
+    {
+        if ((exitState == PlayerStateID.Attacking || exitState == PlayerStateID.AirAttacking) &&
+        (enterState != PlayerStateID.Attacking && enterState != PlayerStateID.AirAttacking))
+        {
+            _attackHandler.Cancel();
+        }
+    }
 
     private IEnumerator EndDashInvincibility()
     {
@@ -470,9 +557,11 @@ public class PlayerController : MonoBehaviour
         //Debug.Log((int)CurrentState);
 
         //-1 means "not attacking"
+        /*
         animator.SetInteger(AnimAttackIdx,
             CurrentState is PlayerStateID.Attacking or PlayerStateID.AirAttacking
                 ? _comboIndex : -1);
+        */
     }
 
     private void Flip()
