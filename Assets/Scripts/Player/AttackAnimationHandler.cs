@@ -9,21 +9,21 @@ public class AttackAnimationHandler : MonoBehaviour
     
     void StartActivateHitbox1()
     {
-        attackHitbox1.ActivateHitbox();
+        //attackHitbox1.ActivateHitbox();
     }
 
     void StartActivateHitbox2() 
     {
-        attackHitbox2.ActivateHitbox();
+        //attackHitbox2.ActivateHitbox();
     }
 
     private void StartDeactivateHitbox1()
     {
-        attackHitbox1.DeactivateHitbox();
+        //attackHitbox1.DeactivateHitbox();
     }
     private void StartDeactivateHitbox2()
     {
-        attackHitbox2.DeactivateHitbox();
+        //attackHitbox2.DeactivateHitbox();
     }
 
 }

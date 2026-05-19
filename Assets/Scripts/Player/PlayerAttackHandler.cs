@@ -214,8 +214,8 @@ public class PlayerAttackHandler : MonoBehaviour
 
         // Position relative to character root in world space
         runtimeHitbox.transform.localPosition = new Vector3(offset.x, offset.y, 0f);
-        Debug.Log(offset.x);
-        Debug.Log(runtimeHitbox.transform.localPosition);
+        //Debug.Log(offset.x);
+        //Debug.Log(runtimeHitbox.transform.localPosition);
 
 
         // Resize the collider
@@ -223,7 +223,7 @@ public class PlayerAttackHandler : MonoBehaviour
         if (col != null)
             col.size = _currentAttack.hitboxSize;
 
-        Debug.Log(runtimeHitbox.transform.localPosition);
+        //Debug.Log(runtimeHitbox.transform.localPosition);
     }
 
     private Vector2 GetFlippedKnockback(bool facingRight)
@@ -241,7 +241,7 @@ public class PlayerAttackHandler : MonoBehaviour
 
     private void OnDrawGizmosSelected()
     {
-        Gizmos.DrawWireSphere(new Vector3(_currentAttack.hitboxOffset.x, _currentAttack.hitboxOffset.y), 0);
+        //Gizmos.DrawWireSphere(new Vector3(_currentAttack.hitboxOffset.x, _currentAttack.hitboxOffset.y), 0);
     }
     
 

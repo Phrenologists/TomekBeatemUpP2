@@ -3,7 +3,7 @@
 public class PlayerEnergy : MonoBehaviour
 {
     [Header("Settings")]
-    [Tooltip("Maximum energy. Exposed in case you want to scale it later.")]
+    [Tooltip("Maximum energy")]
     [SerializeField] private float maxEnergy = 100f;
 
     [Tooltip("Energy awarded per hit when the AttackData doesn't override it.")]
@@ -15,7 +15,7 @@ public class PlayerEnergy : MonoBehaviour
     public float MaxEnergy => maxEnergy;
     public float Fraction => _energy / maxEnergy;
 
-    private float _energy = 0f;
+    public float _energy = 0f;
 
     public void OnHitLanded(float gain = -1f)
     {

@@ -42,15 +42,6 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Special",
-                    "type": "Button",
-                    "id": "8d513814-eb2f-455d-87b7-cafb8623c739",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
                     "name": "HeavyAttack",
                     "type": "Button",
                     "id": "e110b858-c26f-458d-9968-c2c69bf57f8a",
@@ -72,6 +63,33 @@
                     "name": "RightTrigger",
                     "type": "Button",
                     "id": "2f17ed65-651d-4b99-8ef1-06dc0605ed83",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "StrikerSelect",
+                    "type": "Value",
+                    "id": "64e21787-6665-4017-9c4a-d489a8ce8cf7",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "StrikerCall1",
+                    "type": "Button",
+                    "id": "a176bb06-80f7-415e-a33e-e9f2cbc01208",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "StrikerCall2",
+                    "type": "Button",
+                    "id": "36d8a6d3-b3a1-4ea4-84a9-d93b1bb0148e",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -125,17 +143,6 @@
                 },
                 {
                     "name": "",
-                    "id": "8b250156-d43a-4078-aeb1-05962faa900f",
-                    "path": "<Gamepad>/leftShoulder",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Special",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "06350d0f-e9e1-4760-85e8-3c56aec895e5",
                     "path": "<Gamepad>/buttonNorth",
                     "interactions": "",
@@ -164,6 +171,39 @@
                     "processors": "",
                     "groups": "",
                     "action": "RightTrigger",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "24517285-14d7-4acb-9914-b44217a8a53a",
+                    "path": "<Gamepad>/dpad",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "StrikerSelect",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4000787b-f088-4c2c-8d5f-2995166c2a83",
+                    "path": "<Gamepad>/leftShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "StrikerCall1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "12c26967-bc68-48de-9879-ccf0dfd37cd7",
+                    "path": "<Gamepad>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "StrikerCall2",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

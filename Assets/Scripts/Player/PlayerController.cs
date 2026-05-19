@@ -8,7 +8,7 @@
 //
 // ANIMATOR PARAMETERS:
 //   stateID(Int) — matches (int)PlayerStateID exactly
-//   attackIndex(Int) — 0/1/2 for combo hits, -1 when not attacking, might change it later when we do smth else with the attacks
+//   attacks use triggers
 
 using System.Collections;
 using UnityEngine;
@@ -519,7 +519,7 @@ public class PlayerController : MonoBehaviour
 
         _currentHealth -= amount;
 
-        Debug.Log(CurrentHealth);
+        //Debug.Log(CurrentHealth);
 
         if (_currentHealth <= 0)
         {
@@ -539,7 +539,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            Debug.Log("Got hit");
+            //Debug.Log("Got hit");
             _hurtTimer = stats.hurtDuration;
             TransitionTo(PlayerStateID.Hurt);
         }

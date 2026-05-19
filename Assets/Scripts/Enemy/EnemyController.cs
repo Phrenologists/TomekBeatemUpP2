@@ -165,7 +165,7 @@ public class EnemyController : MonoBehaviour, IDamageable
         
         if (_attackCooldownTimer <= 0f && IsInAttackRange())
         {
-            Debug.Log("Attacking");
+            //Debug.Log("Attacking");
             _velX = 0f;
             _velDepth = 0f;
             TransitionTo(EnemyStateID.Windup);
@@ -340,7 +340,7 @@ public class EnemyController : MonoBehaviour, IDamageable
         {
             _currentHealth = 0;
             TransitionTo(EnemyStateID.Dead);
-            Debug.Log(CurrentState);
+            //Debug.Log(CurrentState);
             return;
         }
 

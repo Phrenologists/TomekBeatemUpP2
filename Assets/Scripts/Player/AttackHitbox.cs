@@ -64,6 +64,8 @@ public class AttackHitbox : MonoBehaviour
             //Debug.Log("Hit enemy");
             var enemy = other.GetComponent<IDamageable>();
             enemy?.TakeDamage(damage, kb, causesKnockdown);
+            _ownerEnergy?.OnHitLanded(energyGainOnHit);
+            //Debug.Log("GottenHit");
         }
         if(other.CompareTag("Player"))
         {
@@ -72,8 +74,6 @@ public class AttackHitbox : MonoBehaviour
             PlayerController playerController = other.GetComponent<PlayerController>();
             playerController?.TakeDamage(damage, kb, causesKnockdown);
         }
-
-        _ownerEnergy?.OnHitLanded(energyGainOnHit);
     }
 }
 

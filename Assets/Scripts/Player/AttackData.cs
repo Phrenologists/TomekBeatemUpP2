@@ -10,7 +10,6 @@ public class AttackData : ScriptableObject
     [Tooltip("Human-readable name shown in debug overlays.")]
     public string attackName = "New Attack";
 
-    // ── Frame data ────────────────────────────────────────────────────────────
     [Header("Frame Data  (frames at targetFPS)")]
     [Tooltip("Frames before the hitbox activates. Character commits to the move here.")]
     [Min(1)] public int startupFrames = 5;
