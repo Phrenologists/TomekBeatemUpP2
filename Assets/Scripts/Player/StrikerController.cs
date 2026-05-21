@@ -22,16 +22,16 @@ public class StrikerController : MonoBehaviour
 
     private static readonly int AnimAttackTrigger = Animator.StringToHash("attack");
 
-    public void Activate(StrikerData data, Action onComplete = null)
+    public void Activate(StrikerData data, Vector2 spawnPosition, bool isLB, Action onComplete = null)
     {
         if (_isActive) return;
 
         _data = data;
         _isActive = true;
 
-        Debug.Log("Striker Activates");
-        Vector2 spawnPos = data.attackSpawnPosition;
-        Vector2 entryStart = spawnPos + data.entryStartOffset;
+        transform.SetParent(null);
+
+        Vector2 entryStart = spawnPosition + data.entryStartOffset;
         transform.position = new Vector3(entryStart.x, entryStart.y, 0f);
         gameObject.SetActive(true);
 
@@ -41,7 +41,9 @@ public class StrikerController : MonoBehaviour
 
         if (hitbox != null) hitbox.DeactivateHitbox();
 
-        _sequence = BuildSequence(spawnPos, onComplete);
+        AttackData attack = data.GetAttack(isLB);
+
+        _sequence = BuildSequence(spawnPosition, attack, onComplete);
         _sequence.Play();
     }
 
@@ -53,53 +55,44 @@ public class StrikerController : MonoBehaviour
     }
 
 
-    private Sequence BuildSequence(Vector2 spawnPos, Action onComplete)
+    private Sequence BuildSequence(Vector2 spawnPos, AttackData attack, Action onComplete)
     {
         Sequence seq = DOTween.Sequence();
 
         if (_data.flashOnEntry)
         {
-
-            seq.Append(
-                spriteRenderer.DOFade(0f, 0f)
-            );
+            seq.Append(spriteRenderer.DOFade(0f, 0f));
+            float flashStep = _data.entryDuration / (_data.flashCount * 2f);
             for (int i = 0; i < _data.flashCount; i++)
             {
-                seq.Append(spriteRenderer.DOFade(1f, _data.entryDuration / (_data.flashCount * 2f)));
-                seq.Append(spriteRenderer.DOFade(0f, _data.entryDuration / (_data.flashCount * 2f)));
+                seq.Append(spriteRenderer.DOFade(1f, flashStep));
+                seq.Append(spriteRenderer.DOFade(0f, flashStep));
             }
             seq.Append(spriteRenderer.DOFade(1f, 0f));
-            seq.AppendCallback(() => transform.position = new Vector3(spawnPos.x, spawnPos.y, 0f));
+            seq.AppendCallback(() =>
+                transform.position = new Vector3(spawnPos.x, spawnPos.y, 0f));
         }
         else
         {
-            
             seq.Append(
                 transform.DOMoveX(spawnPos.x, _data.entryDuration)
                          .SetEase(_data.entryEase)
             );
         }
 
-
         if (_data.preAttackDelay > 0f)
             seq.AppendInterval(_data.preAttackDelay);
 
+        seq.AppendCallback(() => StartAttack(attack));
 
-        seq.AppendCallback(() => StartAttack());
-
-
-        float attackWait = _data.attackData != null
-            ? _data.attackData.TotalDuration
-            : 0.5f;
+        float attackWait = attack != null ? attack.TotalDuration : 0.5f;
         seq.AppendInterval(attackWait);
 
-
-        Vector2 exitEnd = (Vector2)transform.position + _data.exitEndOffset;
+        Vector2 exitTarget = spawnPos + _data.exitEndOffset;
         seq.Append(
-            transform.DOMoveX(exitEnd.x, _data.exitDuration)
+            transform.DOMoveX(exitTarget.x, _data.exitDuration)
                      .SetEase(_data.exitEase)
         );
-
 
         seq.AppendCallback(() =>
         {
@@ -112,23 +105,18 @@ public class StrikerController : MonoBehaviour
 
 
 
-    private void StartAttack()
+    private void StartAttack(AttackData attack)
     {
-        if (_data.attackData == null) return;
+        if (attack == null) return;
 
+        if (animator != null && !string.IsNullOrEmpty(attack.animTriggerName))
+            animator.SetTrigger(Animator.StringToHash(attack.animTriggerName));
 
-        if (animator != null && !string.IsNullOrEmpty(_data.attackData.animTriggerName))
-            animator.SetTrigger(Animator.StringToHash(_data.attackData.animTriggerName));
-
-
-        StartCoroutine(RunAttackPhases());
+        StartCoroutine(RunAttackPhases(attack));
     }
 
-    private IEnumerator RunAttackPhases()
+    private IEnumerator RunAttackPhases(AttackData attack)
     {
-        AttackData attack = _data.attackData;
-
-  
         yield return new WaitForSeconds(attack.StartupDuration);
 
         if (hitbox != null)
@@ -137,8 +125,7 @@ public class StrikerController : MonoBehaviour
             hitbox.causesKnockdown = attack.causesKnockdown;
 
             Vector2 kb = attack.knockback;
-            if (_data.faceLeft) kb.x = -Mathf.Abs(kb.x);
-            else kb.x = Mathf.Abs(kb.x);
+            kb.x = _data.faceLeft ? -Mathf.Abs(kb.x) : Mathf.Abs(kb.x);
             hitbox.knockback = kb;
 
             Vector2 offset = attack.hitboxOffset;

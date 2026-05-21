@@ -5,6 +5,7 @@ public class StrikerData : ScriptableObject
 {
     [Tooltip("Display name shown in the striker selection UI.")]
     public string strikerName = "Striker";
+    public string strikerRace = "Human";
 
     [Tooltip("Portrait sprite shown in the selection UI.")]
     public Sprite portrait;
@@ -13,9 +14,14 @@ public class StrikerData : ScriptableObject
     [Tooltip("The striker character prefab. Must have a StrikerController component.")]
     public GameObject prefab;
 
-    [Header("Positioning (world space)")]
-    [Tooltip("Where the striker stands while performing their attack.")]
-    public Vector2 attackSpawnPosition = new Vector2(5f, 0f);
+    [Header("Positioning (relative to call target)")]
+    [Tooltip("Offset from the target object's world position where the striker will stand " +
+             "while attacking. E.g. (3, 0) = appear to the right of the player.")]
+    public Vector2 spawnOffset = new Vector2(3f, 0f);
+
+    //[Header("Positioning (world space)")]
+    //[Tooltip("Where the striker stands while performing their attack.")]
+    //public Vector2 attackSpawnPosition = new Vector2(5f, 0f);
 
     [Tooltip("Offset from attackSpawnPosition where the striker starts before tweening in. " +
              "E.g. (3, 0) = slides in from the right.")]
@@ -38,9 +44,12 @@ public class StrikerData : ScriptableObject
     [Tooltip("Seconds before this striker can be called again after use.")]
     public float cooldown = 8f;
 
-    [Header("Attack")]
-    [Tooltip("The attack the striker performs. Uses the same AttackData system as the player.")]
-    public AttackData attackData;
+    //[Header("Attack")]
+    //[Tooltip("The attack the striker performs. Uses the same AttackData system as the player.")]
+    //public AttackData attackData;
+
+    public AttackData lbAttack;
+    public AttackData rbAttack;
 
     [Tooltip("Should the striker face left (toward the player/enemies) on entry?")]
     public bool faceLeft = true;
@@ -55,4 +64,12 @@ public class StrikerData : ScriptableObject
 
     [Tooltip("Number of alpha flashes on entry if flashOnEntry is true.")]
     public int flashCount = 3;
+
+    public AttackData GetAttack(bool isLB)
+    {
+        if (isLB)
+            return lbAttack != null ? lbAttack : rbAttack;
+        else
+            return rbAttack != null ? rbAttack : lbAttack;
+    }
 }

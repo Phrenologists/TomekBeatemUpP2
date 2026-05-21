@@ -12,6 +12,7 @@ public class StrikerManager : MonoBehaviour
     [Tooltip("If true, LB calls the selected striker. If false, LB/RB call fixed slots " +
              "(LB = slot 0, RB = slot 1) regardless of D-pad selection.")]
     [SerializeField] private bool useSelectionMode = true;
+    [SerializeField] private Transform callTarget;
 
     [Tooltip("Parent transform for spawned striker GameObjects. Leave null to use scene root.")]
     [SerializeField] private Transform strikerParent;
@@ -93,37 +94,32 @@ public class StrikerManager : MonoBehaviour
 
         if (useSelectionMode)
         {
-            // LB or RB both call the currently selected striker
-            if (_input.LBPressed || _input.RBPressed)
-            { 
-                TryCallStriker(_selectedSlot);
-                Debug.Log(_selectedSlot);
-            }
+            if (_input.LBPressed) TryCallStriker(_selectedSlot, isLB: true);
+            if (_input.RBPressed) TryCallStriker(_selectedSlot, isLB: false);
         }
         else
         {
             // Direct mode: LB = slot 0, RB = slot 1
-            if (_input.LBPressed) TryCallStriker(0);
-            if (_input.RBPressed) TryCallStriker(1);
+            if (_input.LBPressed) TryCallStriker(0, isLB: true);
+            if (_input.RBPressed) TryCallStriker(1, isLB: false);
         }
     }
 
-    private void TryCallStriker(int slotIndex)
+    private void TryCallStriker(int slotIndex, bool isLB)
     {
         if (slotIndex < 0 || slotIndex >= 4) return;
         if (slots[slotIndex] == null) return;
         if (_instances[slotIndex] == null) return;
-        if (_isOnCooldown[slotIndex])
-        {
-            // put a sound effect here later
-            return;
-        }
+        if (_isOnCooldown[slotIndex]) return;
 
         StrikerData data = slots[slotIndex];
 
-        _instances[slotIndex].Activate(data, onComplete: () =>
+        // Snapshot the spawn position NOW from the current target location.
+        // The striker will move independently after this point.
+        Vector2 spawnPosition = (Vector2)callTarget.position + data.spawnOffset;
+
+        _instances[slotIndex].Activate(data, spawnPosition, isLB, onComplete: () =>
         {
-            
             StartCooldown(slotIndex, data.cooldown);
         });
 

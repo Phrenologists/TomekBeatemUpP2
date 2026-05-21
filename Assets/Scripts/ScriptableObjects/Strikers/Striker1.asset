@@ -13,16 +13,18 @@ MonoBehaviour:
   m_Name: Striker1
   m_EditorClassIdentifier: 
   strikerName: Striker
+  strikerRace: Human
   portrait: {fileID: 21300000, guid: bc1b1c42eff82fe44bfa4f21dd40384b, type: 3}
   prefab: {fileID: 2465416510750919764, guid: 2e6526da5f241f242abdf6a4fb8897d2, type: 3}
-  attackSpawnPosition: {x: 0, y: 0}
+  spawnOffset: {x: -5, y: 0}
   entryStartOffset: {x: 3, y: 0}
   exitEndOffset: {x: 3, y: 0}
   entryDuration: 0.15
   preAttackDelay: 0.05
   exitDuration: 0.2
   cooldown: 0
-  attackData: {fileID: 11400000, guid: 689733b87985b1c449c037ef98b33932, type: 2}
+  lbAttack: {fileID: 11400000, guid: 689733b87985b1c449c037ef98b33932, type: 2}
+  rbAttack: {fileID: 11400000, guid: b8635bb42b8d8bd41b59e10b7ffcb7f2, type: 2}
   faceLeft: 1
   entryEase: 6
   exitEase: 5
