@@ -31,7 +31,13 @@ public class StrikerController : MonoBehaviour
 
         transform.SetParent(null);
 
-        Vector2 entryStart = spawnPosition + data.entryStartOffset;
+        AttackData resolvedAttack = data.GetAttack(isLB);
+
+        Vector2 entryOffset = resolvedAttack != null
+            ? resolvedAttack.strikerEntryStartOffset
+            : Vector2.zero;
+
+        Vector2 entryStart = spawnPosition + entryOffset;
         transform.position = new Vector3(entryStart.x, entryStart.y, 0f);
         gameObject.SetActive(true);
 
@@ -45,7 +51,10 @@ public class StrikerController : MonoBehaviour
 
         _sequence = BuildSequence(spawnPosition, attack, onComplete);
         _sequence.Play();
+
     }
+
+
 
 
     public void ForceCancel()
@@ -78,6 +87,15 @@ public class StrikerController : MonoBehaviour
                 transform.DOMoveX(spawnPos.x, _data.entryDuration)
                          .SetEase(_data.entryEase)
             );
+            Vector2 entryOffset = attack != null ? attack.strikerEntryStartOffset : Vector2.zero;
+
+            if (Mathf.Abs(entryOffset.y) > 0.001f)
+            {
+                seq.Join(
+                    transform.DOMoveY(spawnPos.y, _data.entryDuration)
+                             .SetEase(_data.entryEase)
+                );
+            }
         }
 
         if (_data.preAttackDelay > 0f)
@@ -88,7 +106,7 @@ public class StrikerController : MonoBehaviour
         float attackWait = attack != null ? attack.TotalDuration : 0.5f;
         seq.AppendInterval(attackWait);
 
-        Vector2 exitTarget = spawnPos + _data.exitEndOffset;
+        Vector2 exitTarget = spawnPos + attack.strikerExitEndOffset;
         seq.Append(
             transform.DOMoveX(exitTarget.x, _data.exitDuration)
                      .SetEase(_data.exitEase)

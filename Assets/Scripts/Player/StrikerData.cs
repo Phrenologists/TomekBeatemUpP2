@@ -5,7 +5,6 @@ public class StrikerData : ScriptableObject
 {
     [Tooltip("Display name shown in the striker selection UI.")]
     public string strikerName = "Striker";
-    public string strikerRace = "Human";
 
     [Tooltip("Portrait sprite shown in the selection UI.")]
     public Sprite portrait;
@@ -14,22 +13,22 @@ public class StrikerData : ScriptableObject
     [Tooltip("The striker character prefab. Must have a StrikerController component.")]
     public GameObject prefab;
 
-    [Header("Positioning (relative to call target)")]
-    [Tooltip("Offset from the target object's world position where the striker will stand " +
-             "while attacking. E.g. (3, 0) = appear to the right of the player.")]
-    public Vector2 spawnOffset = new Vector2(3f, 0f);
+    //[Header("Positioning (relative to call target)")]
+    //[Tooltip("Offset from the target object's world position where the striker will stand " +
+             //"while attacking. E.g. (3, 0) = appear to the right of the player.")]
+    //public Vector2 spawnOffset = new Vector2(3f, 0f);
 
     //[Header("Positioning (world space)")]
     //[Tooltip("Where the striker stands while performing their attack.")]
     //public Vector2 attackSpawnPosition = new Vector2(5f, 0f);
 
-    [Tooltip("Offset from attackSpawnPosition where the striker starts before tweening in. " +
-             "E.g. (3, 0) = slides in from the right.")]
-    public Vector2 entryStartOffset = new Vector2(3f, 0f);
+    //[Tooltip("Offset from attackSpawnPosition where the striker starts before tweening in. " +
+             //"E.g. (3, 0) = slides in from the right.")]
+    //public Vector2 entryStartOffset = new Vector2(3f, 0f);
 
-    [Tooltip("Offset from attackSpawnPosition where the striker moves to when exiting. " +
-             "Usually the same direction as entry.")]
-    public Vector2 exitEndOffset = new Vector2(3f, 0f);
+    //[Tooltip("Offset from attackSpawnPosition where the striker moves to when exiting. " +
+             //"Usually the same direction as entry.")]
+    //public Vector2 exitEndOffset = new Vector2(3f, 0f);
 
     [Header("Timing (seconds)")]
     [Tooltip("Duration of the entry tween.")]

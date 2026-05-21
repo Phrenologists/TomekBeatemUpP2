@@ -75,6 +75,23 @@ public class AttackData : ScriptableObject
 
     public Vector2 recoveryMovement = Vector2.zero;
 
+    // These fields are only used when this AttackData is assigned as a striker
+    // attack. They define where the striker stands relative to the call target,
+    // so different moves can appear from different positions (e.g. lbAttack
+    // drops from above, rbAttack slides in from the side).
+    [Header("Striker Positioning (only used when assigned to a StrikerData)")]
+    [Tooltip("Offset from the call target's GROUND position (GroundY, not world Y) " +
+             "where the striker stands during the attack. " +
+             "X = left/right of target, Y = depth offset.")]
+    public Vector2 strikerSpawnOffset = new Vector2(3f, 0f);
+
+    [Tooltip("Additional offset from the spawn position where the striker begins " +
+             "before tweening in. E.g. (2, 0) = slides in from further right.")]
+    public Vector2 strikerEntryStartOffset = new Vector2(2f, 0f);
+
+    [Tooltip("Offset from the spawn position where the striker moves when exiting.")]
+    public Vector2 strikerExitEndOffset = new Vector2(2f, 0f);
+
     public Vector2 GetMovementForPhase(AttackPhase phase)
     {
         return phase switch

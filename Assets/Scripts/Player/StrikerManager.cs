@@ -36,6 +36,7 @@ public class StrikerManager : MonoBehaviour
     private void Awake()
     {
         _input = GetComponent<StrikerInputHandler>();
+        if (callTarget == null) callTarget = transform;
         PrewarmPool();
     }
 
@@ -113,10 +114,23 @@ public class StrikerManager : MonoBehaviour
         if (_isOnCooldown[slotIndex]) return;
 
         StrikerData data = slots[slotIndex];
+        AttackData attack = data.GetAttack(isLB);
+        if (attack == null)
+        {
+            Debug.LogWarning($"StrikerManager: slot {slotIndex} has no attack assigned for " +
+                             $"{(isLB ? "LB" : "RB")}.", this);
+            return;
+        }
+        float groundY = callTarget.GetComponent<PlayerController>()?.GroundY
+                        ?? callTarget.position.y;
+
+        Vector2 targetGroundPos = new Vector2(callTarget.position.x, groundY);
+
+
 
         // Snapshot the spawn position NOW from the current target location.
         // The striker will move independently after this point.
-        Vector2 spawnPosition = (Vector2)callTarget.position + data.spawnOffset;
+        Vector2 spawnPosition = targetGroundPos + attack.strikerSpawnOffset;
 
         _instances[slotIndex].Activate(data, spawnPosition, isLB, onComplete: () =>
         {
