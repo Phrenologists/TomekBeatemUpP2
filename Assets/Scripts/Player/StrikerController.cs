@@ -19,37 +19,44 @@ public class StrikerController : MonoBehaviour
     private StrikerData _data;
     private Sequence _sequence;
     private bool _isActive;
+    private bool _facingRight;
+    private float _facingSign => _facingRight ? 1f : -1f;
 
     private static readonly int AnimAttackTrigger = Animator.StringToHash("attack");
 
-    public void Activate(StrikerData data, Vector2 spawnPosition, bool isLB, Action onComplete = null)
+    public void Activate(StrikerData data, Vector2 spawnPosition, bool isLB, bool facingRight, Action onComplete = null)
     {
         if (_isActive) return;
 
         _data = data;
         _isActive = true;
+        _facingRight = facingRight;
 
         transform.SetParent(null);
 
         AttackData resolvedAttack = data.GetAttack(isLB);
 
+
+        float facingSign = facingRight ? 1f : -1f;
         Vector2 entryOffset = resolvedAttack != null
             ? resolvedAttack.strikerEntryStartOffset
             : Vector2.zero;
+        entryOffset.x *= facingSign;
 
         Vector2 entryStart = spawnPosition + entryOffset;
         transform.position = new Vector3(entryStart.x, entryStart.y, 0f);
         gameObject.SetActive(true);
 
+        bool strikerFacesLeft = data.faceLeft ? facingRight : !facingRight;
         Vector3 scale = transform.localScale;
-        scale.x = data.faceLeft ? -Mathf.Abs(scale.x) : Mathf.Abs(scale.x);
+        scale.x = strikerFacesLeft ? -Mathf.Abs(scale.x) : Mathf.Abs(scale.x);
         transform.localScale = scale;
 
         if (hitbox != null) hitbox.DeactivateHitbox();
 
         AttackData attack = data.GetAttack(isLB);
 
-        _sequence = BuildSequence(spawnPosition, attack, onComplete);
+        _sequence = BuildSequence(spawnPosition, attack, facingSign, onComplete);
         _sequence.Play();
 
     }
@@ -64,7 +71,7 @@ public class StrikerController : MonoBehaviour
     }
 
 
-    private Sequence BuildSequence(Vector2 spawnPos, AttackData attack, Action onComplete)
+    private Sequence BuildSequence(Vector2 spawnPos, AttackData attack, float facingSign, Action onComplete)
     {
         Sequence seq = DOTween.Sequence();
 
@@ -143,12 +150,14 @@ public class StrikerController : MonoBehaviour
             hitbox.causesKnockdown = attack.causesKnockdown;
 
             Vector2 kb = attack.knockback;
-            kb.x = _data.faceLeft ? -Mathf.Abs(kb.x) : Mathf.Abs(kb.x);
+            kb.x = _facingSign * Mathf.Abs(kb.x);
             hitbox.knockback = kb;
 
             Vector2 offset = attack.hitboxOffset;
-            if (_data.faceLeft) offset.x = -offset.x;
+           // offset.x *= _facingSign;
+            //Debug.Log(offset.x);
             hitbox.transform.localPosition = new Vector3(offset.x, offset.y, 0f);
+            //Debug.Log(hitbox.transform.localPosition.x);
 
             var col = hitbox.GetComponent<BoxCollider2D>();
             if (col != null) col.size = attack.hitboxSize;

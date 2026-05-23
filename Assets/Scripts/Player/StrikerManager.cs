@@ -121,18 +121,23 @@ public class StrikerManager : MonoBehaviour
                              $"{(isLB ? "LB" : "RB")}.", this);
             return;
         }
-        float groundY = callTarget.GetComponent<PlayerController>()?.GroundY
-                        ?? callTarget.position.y;
+        PlayerController pc = callTarget.GetComponent<PlayerController>();
+        float groundY = pc?.GroundY ?? callTarget.position.y;
+
+        bool facingRight = callTarget.localScale.x > 0;
+        float facingSign = facingRight ? 1f : -1f;
 
         Vector2 targetGroundPos = new Vector2(callTarget.position.x, groundY);
 
+        Vector2 spawnOffset = attack.strikerSpawnOffset;
+        spawnOffset.x *= facingSign;
 
 
         // Snapshot the spawn position NOW from the current target location.
         // The striker will move independently after this point.
-        Vector2 spawnPosition = targetGroundPos + attack.strikerSpawnOffset;
+        Vector2 spawnPosition = targetGroundPos + spawnOffset;
 
-        _instances[slotIndex].Activate(data, spawnPosition, isLB, onComplete: () =>
+        _instances[slotIndex].Activate(data, spawnPosition, isLB, facingRight, onComplete: () =>
         {
             StartCooldown(slotIndex, data.cooldown);
         });

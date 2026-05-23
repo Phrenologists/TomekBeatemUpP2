@@ -17,7 +17,7 @@ MonoBehaviour:
   activeFrames: 30
   recoveryFrames: 12
   targetFPS: 60
-  hitboxOffset: {x: 4, y: -1}
+  hitboxOffset: {x: -4, y: -1}
   hitboxSize: {x: 5, y: 1}
   damage: 15
   knockback: {x: 3, y: 1.5}
@@ -31,3 +31,6 @@ MonoBehaviour:
   startupMovement: {x: 0, y: 0}
   activeMovement: {x: 0, y: 0}
   recoveryMovement: {x: 0, y: 0}
+  strikerSpawnOffset: {x: 3, y: 0}
+  strikerEntryStartOffset: {x: 2, y: 0}
+  strikerExitEndOffset: {x: 2, y: 0}
