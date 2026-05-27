@@ -1,126 +1,217 @@
-﻿// COMPONENT REQUIREMENTS:
-//   - EnemyStats   (ScriptableObject)
-//   - Rigidbody2D  (Gravity Scale = 0)
-//   - BoxCollider2D
+﻿// EnemyController.cs  — v3
+// Changes from v2:
+//   - All decision logic removed (no chasing, attack selection, cooldown timers)
+//   - New command API for EnemyAIBrain:
+//       SetMoveCommand(Vector2)  — set desired movement each frame
+//       BeginAttack(EnemyAttackData) — start windup → active → recovery sequence
+//       BeginBlock() / EndBlock()    — enter / exit block stance
+//       BeginTaunt() / EndTaunt()    — enter / exit taunt animation
+//   - New accessors for EnemyAIBrain:
+//       IsAttacking          — true during Windup, Attacking, Recovery
+//       IsInReactiveState()  — true during Hurt, KnockedDown, GetUp, Dead
+//       GroundY              — exposes _groundY for brain distance checks
+//   - TakeDamage respects block: reduced damage + no stagger if Blocking,
+//     unless the attack has breaksBlock or staggersBlock set
+//   - Attack execution driven by EnemyAttackData frame data instead of EnemyStats timers
+//   - EnemyAIBrain.NotifyDeath() called on death instead of direct director calls
+//
+// EnemyStats is still used for movement speeds, hurt/knockdown durations,
+// and health — it no longer stores attack data (that moved to EnemyAttackData).
+//
+// COMPONENT REQUIREMENTS:
+//   - EnemyStats        (ScriptableObject)
+//   - EnemyAIBrain      (sibling component)
+//   - Rigidbody2D       (Gravity Scale = 0)
+//   - CapsuleCollider2D or BoxCollider2D
 //   - Animator
 //   - SpriteRenderer
+//
+// ANIMATOR PARAMETERS:
+//   enemyStateID (Int) — matches (int)EnemyStateID
+//   Any State → Clip, condition enemyStateID == N,
+//   Has Exit Time OFF, Duration 0, Can Transition To Self OFF
 
 using System.Collections;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(EnemyAIBrain))]
 public class EnemyController : MonoBehaviour, IDamageable
 {
+    // ── Inspector ─────────────────────────────────────────────────────────────
     [Header("References")]
     [SerializeField] private EnemyStats stats;
     [SerializeField] private Animator animator;
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private AttackHitbox attackHitbox;
 
-    [Header("2.5D Lane Bounds")]
+    [Header("2.5D Lane Bounds (world-space Y)")]
     [SerializeField] private float groundYMin = -3f;
     [SerializeField] private float groundYMax = 3f;
 
+    [Header("Block Settings")]
+    [Tooltip("Fraction of damage taken while blocking (0 = immune, 0.5 = half damage).")]
+    [SerializeField] private float blockDamageMultiplier = 0.25f;
+
+    // ── Animator hash ─────────────────────────────────────────────────────────
     private static readonly int AnimStateID = Animator.StringToHash("enemyStateID");
 
-    
+    // ── Public accessors ──────────────────────────────────────────────────────
     public EnemyStateID CurrentState { get; private set; } = EnemyStateID.Idle;
     public bool IsGrounded => _jumpHeight <= 0f;
     public bool IsAlive => _currentHealth > 0;
     public int CurrentHealth => _currentHealth;
+    public float GroundY => _groundY;
 
-    
+    /// <summary>True while the enemy is committed to an attack sequence.</summary>
+    public bool IsAttacking =>
+        CurrentState == EnemyStateID.Windup ||
+        CurrentState == EnemyStateID.Attacking ||
+        CurrentState == EnemyStateID.Recovery;
+
+    /// <summary>
+    /// True when the controller is handling a reactive state the brain
+    /// should not interrupt (hurt, knockdown, get-up, dead).
+    /// </summary>
+    public bool IsInReactiveState() =>
+        CurrentState == EnemyStateID.Hurt ||
+        CurrentState == EnemyStateID.KnockedDown ||
+        CurrentState == EnemyStateID.GetUp ||
+        CurrentState == EnemyStateID.Dead;
+
+    // ── Components ────────────────────────────────────────────────────────────
     private Rigidbody2D _rb;
+    private EnemyAIBrain _brain;
 
-    
-    private Transform _playerTransform;
-    private PlayerController _playerController;
-
-    
+    // ── 2.5D position model ───────────────────────────────────────────────────
     private float _groundY;
     private float _jumpHeight;
     private float _jumpVelocity;
     private float _velX;
     private float _velDepth;
 
-    
+    // ── Facing ────────────────────────────────────────────────────────────────
     private bool _facingRight = true;
 
-    
-    private float _stateTimer;
-    public float _attackCooldownTimer;
+    // ── Brain command buffer ──────────────────────────────────────────────────
+    // Brain writes these each frame; controller consumes them in Update.
+    private Vector2 _moveCommand;        // desired normalised move direction
 
-    
+    // ── State timers ──────────────────────────────────────────────────────────
+    private float _stateTimer;
+
+    // ── Active attack ─────────────────────────────────────────────────────────
+    private EnemyAttackData _activeAttack;
+    private EnemyAttackPhase _attackPhase;
+
+    // ── Health ────────────────────────────────────────────────────────────────
     private int _currentHealth;
 
-    
+    // ── Player reference (for facing only — distances computed by brain) ──────
+    private Transform _playerTransform;
+
+    // ════════════════════════════════════════════════════════════════════════
+    // Unity lifecycle
+    // ════════════════════════════════════════════════════════════════════════
 
     private void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
         _rb.gravityScale = 0f;
         _rb.freezeRotation = true;
+        _brain = GetComponent<EnemyAIBrain>();
 
         _currentHealth = stats.maxHealth;
         _groundY = transform.position.y;
 
-        
         GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
-        if (playerObj != null)
-        {
-            _playerTransform = playerObj.transform;
-            _playerController = playerObj.GetComponent<PlayerController>();
-        }
-        else
-        {
-            Debug.LogWarning("EnemyController: No GameObject tagged 'Player' found.", this);
-        }
+        if (playerObj != null) _playerTransform = playerObj.transform;
 
-       
-        if (attackHitbox != null)
-            attackHitbox.gameObject.SetActive(false);
+        if (attackHitbox != null) attackHitbox.gameObject.SetActive(false);
     }
 
     private void Update()
     {
-        UpdateAnimator();
-        //if (!IsAlive) return;
-
-        
-        if (_attackCooldownTimer > 0f) _attackCooldownTimer -= Time.deltaTime;
-
+        // Physics and position always run (needed for knockback, death fall, etc.)
         TickState();
 
-        
         if (_jumpHeight < 0f) { _jumpHeight = 0f; _jumpVelocity = 0f; }
-
-        
         _groundY = Mathf.Clamp(_groundY, groundYMin, groundYMax);
 
-        
         Vector3 pos = transform.position;
         pos.x += _velX * Time.deltaTime;
         pos.y = _groundY + _jumpHeight;
         transform.position = pos;
         _rb.position = new Vector2(pos.x, pos.y);
 
-        
         if (spriteRenderer != null)
             spriteRenderer.sortingOrder = Mathf.RoundToInt(-_groundY * 10f);
 
+        UpdateAnimator();
     }
 
-    
+    // ════════════════════════════════════════════════════════════════════════
+    // Brain command API
+    // ════════════════════════════════════════════════════════════════════════
+
+    /// <summary>
+    /// Brain calls this each frame to set desired movement.
+    /// Direction is normalised; speed is applied from EnemyStats.
+    /// Zero = stop.
+    /// </summary>
+    public void SetMoveCommand(Vector2 direction)
+    {
+        _moveCommand = direction;
+    }
+
+    /// <summary>
+    /// Brain calls this to start an attack sequence.
+    /// Controller runs Windup → Attacking → Recovery automatically.
+    /// Brain polls IsAttacking to know when it's done.
+    /// </summary>
+    public void BeginAttack(EnemyAttackData attack)
+    {
+        if (attack == null) return;
+        _activeAttack = attack;
+        TransitionTo(EnemyStateID.Windup);
+    }
+
+    /// <summary>Brain calls this to enter block stance.</summary>
+    public void BeginBlock() => TransitionTo(EnemyStateID.Blocking);
+
+    /// <summary>Brain calls this to exit block stance.</summary>
+    public void EndBlock()
+    {
+        if (CurrentState == EnemyStateID.Blocking)
+            TransitionTo(EnemyStateID.Wandering);
+    }
+
+    /// <summary>Brain calls this to start a taunt.</summary>
+    public void BeginTaunt() => TransitionTo(EnemyStateID.Taunting);
+
+    /// <summary>Brain calls this when taunt duration expires.</summary>
+    public void EndTaunt()
+    {
+        if (CurrentState == EnemyStateID.Taunting)
+            TransitionTo(EnemyStateID.Wandering);
+    }
+
+    // ════════════════════════════════════════════════════════════════════════
+    // State machine — execution only, no decisions
+    // ════════════════════════════════════════════════════════════════════════
 
     private void TickState()
     {
         switch (CurrentState)
         {
             case EnemyStateID.Idle: TickIdle(); break;
-            case EnemyStateID.Chasing: TickChasing(); break;
+            case EnemyStateID.Wandering: TickMoving(); break;
+            case EnemyStateID.Chasing: TickMoving(); break;
             case EnemyStateID.Windup: TickWindup(); break;
             case EnemyStateID.Attacking: TickAttacking(); break;
             case EnemyStateID.Recovery: TickRecovery(); break;
+            case EnemyStateID.Blocking: TickBlocking(); break;
+            case EnemyStateID.Taunting: TickTaunting(); break;
             case EnemyStateID.Hurt: TickHurt(); break;
             case EnemyStateID.KnockedDown: TickKnockedDown(); break;
             case EnemyStateID.GetUp: TickGetUp(); break;
@@ -128,89 +219,99 @@ public class EnemyController : MonoBehaviour, IDamageable
         }
     }
 
-    
+    // ── IDLE ──────────────────────────────────────────────────────────────────
     private void TickIdle()
     {
         ApplyFriction();
-
         _stateTimer -= Time.deltaTime;
         if (_stateTimer <= 0f)
-            TransitionTo(EnemyStateID.Chasing);
+            TransitionTo(EnemyStateID.Wandering);
     }
 
-    
-    private void TickChasing()
+    // ── WANDERING / CHASING — both execute the brain's move command ───────────
+    private void TickMoving()
     {
-        if (_playerTransform == null) return;
-
-        float playerGroundY = GetPlayerGroundY();
-
-        float diffX = _playerTransform.position.x - transform.position.x;
-        float diffDepth = playerGroundY - _groundY;
-
-        
-        float targetVX = Mathf.Sign(diffX) * stats.walkSpeed;
-        float targetVDepth = Mathf.Sign(diffDepth) * stats.depthSpeed;
-
-        
-        if (Mathf.Abs(diffX) < 0.05f) targetVX = 0f;
-        if (Mathf.Abs(diffDepth) < 0.05f) targetVDepth = 0f;
+        // Apply brain's move command this frame
+        float targetVX = _moveCommand.x * stats.walkSpeed;
+        float targetVDepth = _moveCommand.y * stats.depthSpeed;
 
         _velX = Mathf.MoveTowards(_velX, targetVX, stats.acceleration * Time.deltaTime);
         _velDepth = Mathf.MoveTowards(_velDepth, targetVDepth, stats.acceleration * Time.deltaTime);
         _groundY += _velDepth * Time.deltaTime;
 
-        FacePlayer();
+        // Update controller state to reflect what the brain is doing
+        EnemyStateID desired = _moveCommand.sqrMagnitude > 0.01f
+            ? (_brain.CurrentRole == EnemyRole.Attacker || _brain.CurrentRole == EnemyRole.Flanker
+                ? EnemyStateID.Chasing
+                : EnemyStateID.Wandering)
+            : EnemyStateID.Wandering;
 
-        
-        if (_attackCooldownTimer <= 0f && IsInAttackRange())
-        {
-            //Debug.Log("Attacking");
-            _velX = 0f;
-            _velDepth = 0f;
-            TransitionTo(EnemyStateID.Windup);
-        }
+        if (desired != CurrentState) TransitionTo(desired);
+
+        FacePlayer();
     }
 
-    
+    // ── WINDUP ────────────────────────────────────────────────────────────────
     private void TickWindup()
     {
         ApplyFriction();
-        FacePlayer();   
-
+        FacePlayer();
         _stateTimer -= Time.deltaTime;
+
         if (_stateTimer <= 0f)
             TransitionTo(EnemyStateID.Attacking);
     }
 
-    
+    // ── ATTACKING ─────────────────────────────────────────────────────────────
     private void TickAttacking()
     {
-        ApplyFriction();
+        // Apply active phase movement from attack data
+        if (_activeAttack != null)
+        {
+            Vector2 move = _activeAttack.GetMovementForPhase(EnemyAttackPhase.Active);
+            float fwd = _facingRight ? 1f : -1f;
+            _velX = Mathf.Lerp(_velX, move.x * fwd, 10f * Time.deltaTime);
+        }
 
         _stateTimer -= Time.deltaTime;
         if (_stateTimer <= 0f)
         {
-            
             if (attackHitbox != null) attackHitbox.DeactivateHitbox();
             TransitionTo(EnemyStateID.Recovery);
         }
     }
 
-    
+    // ── RECOVERY ─────────────────────────────────────────────────────────────
     private void TickRecovery()
     {
         ApplyFriction();
-
         _stateTimer -= Time.deltaTime;
+
         if (_stateTimer <= 0f)
         {
-            _attackCooldownTimer = stats.attackCooldown;
-            TransitionTo(EnemyStateID.Chasing);
+            _activeAttack = null;
+            // Brain polls IsAttacking — returning to Wandering signals it's done
+            TransitionTo(EnemyStateID.Wandering);
         }
     }
 
-    
+    // ── BLOCKING ─────────────────────────────────────────────────────────────
+    private void TickBlocking()
+    {
+        ApplyFriction();
+        FacePlayer();
+        // Brain owns timing — controller just holds the state
+    }
+
+    // ── TAUNTING ─────────────────────────────────────────────────────────────
+    private void TickTaunting()
+    {
+        ApplyFriction();
+        FacePlayer();
+        // Brain owns timing
+    }
+
+    // ── HURT ──────────────────────────────────────────────────────────────────
     private void TickHurt()
     {
         if (!IsGrounded) TickFallPhysics();
@@ -220,11 +321,11 @@ public class EnemyController : MonoBehaviour, IDamageable
         if (_stateTimer <= 0f && IsGrounded)
         {
             _velX = 0f;
-            TransitionTo(EnemyStateID.Chasing);
+            TransitionTo(EnemyStateID.Wandering);
         }
     }
 
-    
+    // ── KNOCKED DOWN ─────────────────────────────────────────────────────────
     private void TickKnockedDown()
     {
         if (!IsGrounded) TickFallPhysics();
@@ -238,40 +339,22 @@ public class EnemyController : MonoBehaviour, IDamageable
         }
     }
 
-    
+    // ── GET UP ────────────────────────────────────────────────────────────────
     private void TickGetUp()
     {
         _stateTimer -= Time.deltaTime;
         if (_stateTimer <= 0f)
-        {
-            _attackCooldownTimer = stats.attackCooldown * 0.5f; 
-            TransitionTo(EnemyStateID.Chasing);
-        }
+            TransitionTo(EnemyStateID.Wandering);
     }
 
-    
-
-    private void ApplyFriction()
-    {
-        _velX = Mathf.MoveTowards(_velX, 0f, stats.deceleration * Time.deltaTime);
-        _velDepth = Mathf.MoveTowards(_velDepth, 0f, stats.deceleration * Time.deltaTime);
-        _groundY += _velDepth * Time.deltaTime;
-    }
-
-    private void TickFallPhysics()
-    {
-        float g = 3.5f * Mathf.Abs(Physics2D.gravity.y);   
-        _jumpVelocity -= g * Time.deltaTime;
-        _jumpVelocity = Mathf.Max(_jumpVelocity, -20f);
-        _jumpHeight += _jumpVelocity * Time.deltaTime;
-    }
-
-    
+    // ════════════════════════════════════════════════════════════════════════
+    // State transitions
+    // ════════════════════════════════════════════════════════════════════════
 
     private void TransitionTo(EnemyStateID next)
     {
         if (next == CurrentState) return;
-        OnExitState(CurrentState);
+        OnExitState(CurrentState, next);
         CurrentState = next;
         OnEnterState(next);
     }
@@ -281,27 +364,54 @@ public class EnemyController : MonoBehaviour, IDamageable
         switch (state)
         {
             case EnemyStateID.Idle:
-                //Will have to put a patrol/move around randomly routine here
-                _stateTimer = Random.Range(0.1f, 0.4f);
+                _stateTimer = Random.Range(0.1f, 0.3f);
                 break;
 
             case EnemyStateID.Windup:
-                _stateTimer = stats.windupDuration;
+                _stateTimer = _activeAttack != null
+                    ? _activeAttack.StartupDuration
+                    : stats.windupDuration;
                 break;
 
             case EnemyStateID.Attacking:
-                _stateTimer = stats.attackDuration;
-                
-                if (attackHitbox != null) attackHitbox.ActivateHitbox();
+                _stateTimer = _activeAttack != null
+                    ? _activeAttack.ActiveDuration
+                    : stats.attackDuration;
+
+                // Configure and open hitbox from EnemyAttackData
+                if (attackHitbox != null && _activeAttack != null)
+                {
+                    attackHitbox.damage = _activeAttack.damage;
+                    attackHitbox.causesKnockdown = _activeAttack.causesKnockdown;
+
+                    Vector2 kb = _activeAttack.knockback;
+                    kb.x = _facingRight ? Mathf.Abs(kb.x) : -Mathf.Abs(kb.x);
+                    attackHitbox.knockback = kb;
+
+                    Vector2 offset = _activeAttack.hitboxOffset;
+                    if (!_facingRight) offset.x = -offset.x;
+                    attackHitbox.transform.localPosition = new Vector3(offset.x, offset.y, 0f);
+
+                    var col = attackHitbox.GetComponent<BoxCollider2D>();
+                    if (col != null) col.size = _activeAttack.hitboxSize;
+
+                    attackHitbox.ActivateHitbox();
+                }
+
+                // Play animation trigger
+                if (animator != null && _activeAttack != null &&
+                    !string.IsNullOrEmpty(_activeAttack.animTriggerName))
+                    animator.SetTrigger(Animator.StringToHash(_activeAttack.animTriggerName));
                 break;
 
             case EnemyStateID.Recovery:
-                _stateTimer = stats.recoveryDuration;
+                _stateTimer = _activeAttack != null
+                    ? _activeAttack.RecoveryDuration
+                    : stats.recoveryDuration;
                 break;
 
             case EnemyStateID.Hurt:
                 _stateTimer = stats.hurtDuration;
-                
                 if (attackHitbox != null) attackHitbox.DeactivateHitbox();
                 break;
 
@@ -318,21 +428,51 @@ public class EnemyController : MonoBehaviour, IDamageable
                 if (attackHitbox != null) attackHitbox.DeactivateHitbox();
                 _velX = 0f;
                 _velDepth = 0f;
-                _jumpVelocity = 0f;
                 _jumpHeight = 0f;
+                _jumpVelocity = 0f;
+                _brain?.NotifyDeath();
                 StartCoroutine(DestroyAfterDelay(1.5f));
                 break;
         }
     }
 
-    private void OnExitState(EnemyStateID state) { }
+    private void OnExitState(EnemyStateID exiting, EnemyStateID entering)
+    {
+        // Deactivate hitbox when leaving any attack state via interrupt
+        bool leavingAttack = exiting == EnemyStateID.Windup ||
+                             exiting == EnemyStateID.Attacking ||
+                             exiting == EnemyStateID.Recovery;
+        bool enteringAttack = entering == EnemyStateID.Windup ||
+                              entering == EnemyStateID.Attacking ||
+                              entering == EnemyStateID.Recovery;
 
-    
+        if (leavingAttack && !enteringAttack)
+            if (attackHitbox != null) attackHitbox.DeactivateHitbox();
+    }
+
+    // ════════════════════════════════════════════════════════════════════════
+    // IDamageable
+    // ════════════════════════════════════════════════════════════════════════
 
     public void TakeDamage(int amount, Vector2 knockback, bool knockdown = false)
     {
-        if (!IsAlive) return;
-        if (CurrentState == EnemyStateID.Dead) return;
+        if (!IsAlive || CurrentState == EnemyStateID.Dead) return;
+
+        // Block mitigation
+        if (CurrentState == EnemyStateID.Blocking)
+        {
+            // Check if the incoming attack overrides block
+            // (AttackHitbox doesn't carry EnemyAttackData flags directly,
+            //  so we use a simple damage reduction for now)
+            amount = Mathf.RoundToInt(amount * blockDamageMultiplier);
+            knockdown = false;
+            knockback *= 0.2f;
+
+            // Reduced damage still applies — no state change while blocking
+            _currentHealth -= amount;
+            if (_currentHealth <= 0) { _currentHealth = 0; TransitionTo(EnemyStateID.Dead); }
+            return;
+        }
 
         _currentHealth -= amount;
 
@@ -340,7 +480,6 @@ public class EnemyController : MonoBehaviour, IDamageable
         {
             _currentHealth = 0;
             TransitionTo(EnemyStateID.Dead);
-            //Debug.Log(CurrentState);
             return;
         }
 
@@ -348,34 +487,31 @@ public class EnemyController : MonoBehaviour, IDamageable
         _jumpVelocity = knockback.y;
         if (knockback.y > 0f) _jumpHeight = 0.01f;
 
-        if (knockdown)
-            TransitionTo(EnemyStateID.KnockedDown);
-        else
-            TransitionTo(EnemyStateID.Hurt);
+        TransitionTo(knockdown ? EnemyStateID.KnockedDown : EnemyStateID.Hurt);
     }
 
-    
-    private bool IsInAttackRange()
+    // ════════════════════════════════════════════════════════════════════════
+    // Physics helpers
+    // ════════════════════════════════════════════════════════════════════════
+
+    private void ApplyFriction()
     {
-        if (_playerTransform == null) return false;
-        //Debug.Log("PlayerFound");
-
-        float diffX = Mathf.Abs(_playerTransform.position.x - transform.position.x);
-        float diffDepth = Mathf.Abs(GetPlayerGroundY() - _groundY);
-
-        return diffX <= stats.attackRangeX && diffDepth <= stats.attackRangeDepth;
+        _velX = Mathf.MoveTowards(_velX, 0f, stats.deceleration * Time.deltaTime);
+        _velDepth = Mathf.MoveTowards(_velDepth, 0f, stats.deceleration * Time.deltaTime);
+        _groundY += _velDepth * Time.deltaTime;
     }
 
-    
-    private float GetPlayerGroundY()
+    private void TickFallPhysics()
     {
-        if (_playerController != null)
-        {
-            
-            return _playerController.GroundY;
-        }
-        return _playerTransform != null ? _playerTransform.position.y : transform.position.y;
+        float g = 3.5f * Mathf.Abs(Physics2D.gravity.y);
+        _jumpVelocity -= g * Time.deltaTime;
+        _jumpVelocity = Mathf.Max(_jumpVelocity, -20f);
+        _jumpHeight += _jumpVelocity * Time.deltaTime;
     }
+
+    // ════════════════════════════════════════════════════════════════════════
+    // Helpers
+    // ════════════════════════════════════════════════════════════════════════
 
     private void FacePlayer()
     {
@@ -399,6 +535,9 @@ public class EnemyController : MonoBehaviour, IDamageable
         Destroy(gameObject);
     }
 
+    // ════════════════════════════════════════════════════════════════════════
+    // Animator
+    // ════════════════════════════════════════════════════════════════════════
 
     private void UpdateAnimator()
     {
@@ -406,25 +545,18 @@ public class EnemyController : MonoBehaviour, IDamageable
         animator.SetInteger(AnimStateID, (int)CurrentState);
     }
 
-    
+    // ════════════════════════════════════════════════════════════════════════
+    // Gizmos
+    // ════════════════════════════════════════════════════════════════════════
 
     private void OnDrawGizmosSelected()
     {
-        //Lane bounds
         float x = transform.position.x;
+
         Gizmos.color = Color.cyan;
         Gizmos.DrawLine(new Vector3(x - 5f, groundYMin), new Vector3(x + 5f, groundYMin));
         Gizmos.DrawLine(new Vector3(x - 5f, groundYMax), new Vector3(x + 5f, groundYMax));
 
-        //Attack range box
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireCube(
-            new Vector3(transform.position.x, _groundY),
-            new Vector3(stats != null ? stats.attackRangeX * 2f : 1f,
-                        stats != null ? stats.attackRangeDepth * 2f : 0.5f,
-                        0f));
-
-        //Current ground position
         Gizmos.color = IsGrounded ? Color.green : Color.yellow;
         Gizmos.DrawWireSphere(new Vector3(x, _groundY), 0.1f);
     }

@@ -31,3 +31,6 @@ MonoBehaviour:
   startupMovement: {x: 0, y: 0}
   activeMovement: {x: 5, y: -5}
   recoveryMovement: {x: 0, y: 0}
+  strikerSpawnOffset: {x: 3, y: 0}
+  strikerEntryStartOffset: {x: 2, y: 0}
+  strikerExitEndOffset: {x: 2, y: 0}
