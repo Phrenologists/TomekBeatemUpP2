@@ -1,35 +1,10 @@
-﻿// EnemyController.cs  — v3
-// Changes from v2:
-//   - All decision logic removed (no chasing, attack selection, cooldown timers)
-//   - New command API for EnemyAIBrain:
-//       SetMoveCommand(Vector2)  — set desired movement each frame
-//       BeginAttack(EnemyAttackData) — start windup → active → recovery sequence
-//       BeginBlock() / EndBlock()    — enter / exit block stance
-//       BeginTaunt() / EndTaunt()    — enter / exit taunt animation
-//   - New accessors for EnemyAIBrain:
-//       IsAttacking          — true during Windup, Attacking, Recovery
-//       IsInReactiveState()  — true during Hurt, KnockedDown, GetUp, Dead
-//       GroundY              — exposes _groundY for brain distance checks
-//   - TakeDamage respects block: reduced damage + no stagger if Blocking,
-//     unless the attack has breaksBlock or staggersBlock set
-//   - Attack execution driven by EnemyAttackData frame data instead of EnemyStats timers
-//   - EnemyAIBrain.NotifyDeath() called on death instead of direct director calls
-//
-// EnemyStats is still used for movement speeds, hurt/knockdown durations,
-// and health — it no longer stores attack data (that moved to EnemyAttackData).
-//
-// COMPONENT REQUIREMENTS:
+﻿// COMPONENTs REQUIRED:
 //   - EnemyStats        (ScriptableObject)
 //   - EnemyAIBrain      (sibling component)
 //   - Rigidbody2D       (Gravity Scale = 0)
 //   - CapsuleCollider2D or BoxCollider2D
 //   - Animator
 //   - SpriteRenderer
-//
-// ANIMATOR PARAMETERS:
-//   enemyStateID (Int) — matches (int)EnemyStateID
-//   Any State → Clip, condition enemyStateID == N,
-//   Has Exit Time OFF, Duration 0, Can Transition To Self OFF
 
 using System.Collections;
 using UnityEngine;
@@ -38,9 +13,10 @@ using UnityEngine;
 [RequireComponent(typeof(EnemyAIBrain))]
 public class EnemyController : MonoBehaviour, IDamageable
 {
-    // ── Inspector ─────────────────────────────────────────────────────────────
+    
     [Header("References")]
-    [SerializeField] private EnemyStats stats;
+    //zamienic na private serialized jak juz debug nie bedzie potrzebny
+    public EnemyStats stats;
     [SerializeField] private Animator animator;
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private AttackHitbox attackHitbox;
@@ -53,66 +29,48 @@ public class EnemyController : MonoBehaviour, IDamageable
     [Tooltip("Fraction of damage taken while blocking (0 = immune, 0.5 = half damage).")]
     [SerializeField] private float blockDamageMultiplier = 0.25f;
 
-    // ── Animator hash ─────────────────────────────────────────────────────────
     private static readonly int AnimStateID = Animator.StringToHash("enemyStateID");
 
-    // ── Public accessors ──────────────────────────────────────────────────────
     public EnemyStateID CurrentState { get; private set; } = EnemyStateID.Idle;
     public bool IsGrounded => _jumpHeight <= 0f;
     public bool IsAlive => _currentHealth > 0;
     public int CurrentHealth => _currentHealth;
     public float GroundY => _groundY;
 
-    /// <summary>True while the enemy is committed to an attack sequence.</summary>
     public bool IsAttacking =>
         CurrentState == EnemyStateID.Windup ||
         CurrentState == EnemyStateID.Attacking ||
         CurrentState == EnemyStateID.Recovery;
 
-    /// <summary>
-    /// True when the controller is handling a reactive state the brain
-    /// should not interrupt (hurt, knockdown, get-up, dead).
-    /// </summary>
+
     public bool IsInReactiveState() =>
         CurrentState == EnemyStateID.Hurt ||
         CurrentState == EnemyStateID.KnockedDown ||
         CurrentState == EnemyStateID.GetUp ||
         CurrentState == EnemyStateID.Dead;
 
-    // ── Components ────────────────────────────────────────────────────────────
     private Rigidbody2D _rb;
     private EnemyAIBrain _brain;
 
-    // ── 2.5D position model ───────────────────────────────────────────────────
     private float _groundY;
     private float _jumpHeight;
     private float _jumpVelocity;
     private float _velX;
     private float _velDepth;
 
-    // ── Facing ────────────────────────────────────────────────────────────────
     private bool _facingRight = true;
 
-    // ── Brain command buffer ──────────────────────────────────────────────────
-    // Brain writes these each frame; controller consumes them in Update.
-    private Vector2 _moveCommand;        // desired normalised move direction
+    private Vector2 _moveCommand;
 
-    // ── State timers ──────────────────────────────────────────────────────────
     private float _stateTimer;
 
-    // ── Active attack ─────────────────────────────────────────────────────────
     private EnemyAttackData _activeAttack;
     private EnemyAttackPhase _attackPhase;
 
-    // ── Health ────────────────────────────────────────────────────────────────
     private int _currentHealth;
 
-    // ── Player reference (for facing only — distances computed by brain) ──────
     private Transform _playerTransform;
 
-    // ════════════════════════════════════════════════════════════════════════
-    // Unity lifecycle
-    // ════════════════════════════════════════════════════════════════════════
 
     private void Awake()
     {
@@ -132,7 +90,6 @@ public class EnemyController : MonoBehaviour, IDamageable
 
     private void Update()
     {
-        // Physics and position always run (needed for knockback, death fall, etc.)
         TickState();
 
         if (_jumpHeight < 0f) { _jumpHeight = 0f; _jumpVelocity = 0f; }
@@ -150,25 +107,11 @@ public class EnemyController : MonoBehaviour, IDamageable
         UpdateAnimator();
     }
 
-    // ════════════════════════════════════════════════════════════════════════
-    // Brain command API
-    // ════════════════════════════════════════════════════════════════════════
-
-    /// <summary>
-    /// Brain calls this each frame to set desired movement.
-    /// Direction is normalised; speed is applied from EnemyStats.
-    /// Zero = stop.
-    /// </summary>
     public void SetMoveCommand(Vector2 direction)
     {
         _moveCommand = direction;
     }
 
-    /// <summary>
-    /// Brain calls this to start an attack sequence.
-    /// Controller runs Windup → Attacking → Recovery automatically.
-    /// Brain polls IsAttacking to know when it's done.
-    /// </summary>
     public void BeginAttack(EnemyAttackData attack)
     {
         if (attack == null) return;
@@ -176,29 +119,23 @@ public class EnemyController : MonoBehaviour, IDamageable
         TransitionTo(EnemyStateID.Windup);
     }
 
-    /// <summary>Brain calls this to enter block stance.</summary>
     public void BeginBlock() => TransitionTo(EnemyStateID.Blocking);
 
-    /// <summary>Brain calls this to exit block stance.</summary>
     public void EndBlock()
     {
         if (CurrentState == EnemyStateID.Blocking)
             TransitionTo(EnemyStateID.Wandering);
     }
 
-    /// <summary>Brain calls this to start a taunt.</summary>
     public void BeginTaunt() => TransitionTo(EnemyStateID.Taunting);
 
-    /// <summary>Brain calls this when taunt duration expires.</summary>
     public void EndTaunt()
     {
         if (CurrentState == EnemyStateID.Taunting)
             TransitionTo(EnemyStateID.Wandering);
     }
 
-    // ════════════════════════════════════════════════════════════════════════
-    // State machine — execution only, no decisions
-    // ════════════════════════════════════════════════════════════════════════
+
 
     private void TickState()
     {
@@ -219,7 +156,6 @@ public class EnemyController : MonoBehaviour, IDamageable
         }
     }
 
-    // ── IDLE ──────────────────────────────────────────────────────────────────
     private void TickIdle()
     {
         ApplyFriction();
@@ -228,10 +164,8 @@ public class EnemyController : MonoBehaviour, IDamageable
             TransitionTo(EnemyStateID.Wandering);
     }
 
-    // ── WANDERING / CHASING — both execute the brain's move command ───────────
     private void TickMoving()
     {
-        // Apply brain's move command this frame
         float targetVX = _moveCommand.x * stats.walkSpeed;
         float targetVDepth = _moveCommand.y * stats.depthSpeed;
 
@@ -239,7 +173,6 @@ public class EnemyController : MonoBehaviour, IDamageable
         _velDepth = Mathf.MoveTowards(_velDepth, targetVDepth, stats.acceleration * Time.deltaTime);
         _groundY += _velDepth * Time.deltaTime;
 
-        // Update controller state to reflect what the brain is doing
         EnemyStateID desired = _moveCommand.sqrMagnitude > 0.01f
             ? (_brain.CurrentRole == EnemyRole.Attacker || _brain.CurrentRole == EnemyRole.Flanker
                 ? EnemyStateID.Chasing
@@ -251,7 +184,6 @@ public class EnemyController : MonoBehaviour, IDamageable
         FacePlayer();
     }
 
-    // ── WINDUP ────────────────────────────────────────────────────────────────
     private void TickWindup()
     {
         ApplyFriction();
@@ -262,10 +194,8 @@ public class EnemyController : MonoBehaviour, IDamageable
             TransitionTo(EnemyStateID.Attacking);
     }
 
-    // ── ATTACKING ─────────────────────────────────────────────────────────────
     private void TickAttacking()
     {
-        // Apply active phase movement from attack data
         if (_activeAttack != null)
         {
             Vector2 move = _activeAttack.GetMovementForPhase(EnemyAttackPhase.Active);
@@ -281,7 +211,6 @@ public class EnemyController : MonoBehaviour, IDamageable
         }
     }
 
-    // ── RECOVERY ─────────────────────────────────────────────────────────────
     private void TickRecovery()
     {
         ApplyFriction();
@@ -290,28 +219,22 @@ public class EnemyController : MonoBehaviour, IDamageable
         if (_stateTimer <= 0f)
         {
             _activeAttack = null;
-            // Brain polls IsAttacking — returning to Wandering signals it's done
             TransitionTo(EnemyStateID.Wandering);
         }
     }
 
-    // ── BLOCKING ─────────────────────────────────────────────────────────────
     private void TickBlocking()
     {
         ApplyFriction();
         FacePlayer();
-        // Brain owns timing — controller just holds the state
     }
 
-    // ── TAUNTING ─────────────────────────────────────────────────────────────
     private void TickTaunting()
     {
         ApplyFriction();
         FacePlayer();
-        // Brain owns timing
     }
 
-    // ── HURT ──────────────────────────────────────────────────────────────────
     private void TickHurt()
     {
         if (!IsGrounded) TickFallPhysics();
@@ -325,7 +248,6 @@ public class EnemyController : MonoBehaviour, IDamageable
         }
     }
 
-    // ── KNOCKED DOWN ─────────────────────────────────────────────────────────
     private void TickKnockedDown()
     {
         if (!IsGrounded) TickFallPhysics();
@@ -339,17 +261,12 @@ public class EnemyController : MonoBehaviour, IDamageable
         }
     }
 
-    // ── GET UP ────────────────────────────────────────────────────────────────
     private void TickGetUp()
     {
         _stateTimer -= Time.deltaTime;
         if (_stateTimer <= 0f)
             TransitionTo(EnemyStateID.Wandering);
     }
-
-    // ════════════════════════════════════════════════════════════════════════
-    // State transitions
-    // ════════════════════════════════════════════════════════════════════════
 
     private void TransitionTo(EnemyStateID next)
     {
@@ -378,7 +295,6 @@ public class EnemyController : MonoBehaviour, IDamageable
                     ? _activeAttack.ActiveDuration
                     : stats.attackDuration;
 
-                // Configure and open hitbox from EnemyAttackData
                 if (attackHitbox != null && _activeAttack != null)
                 {
                     attackHitbox.damage = _activeAttack.damage;
@@ -398,7 +314,6 @@ public class EnemyController : MonoBehaviour, IDamageable
                     attackHitbox.ActivateHitbox();
                 }
 
-                // Play animation trigger
                 if (animator != null && _activeAttack != null &&
                     !string.IsNullOrEmpty(_activeAttack.animTriggerName))
                     animator.SetTrigger(Animator.StringToHash(_activeAttack.animTriggerName));
@@ -438,7 +353,6 @@ public class EnemyController : MonoBehaviour, IDamageable
 
     private void OnExitState(EnemyStateID exiting, EnemyStateID entering)
     {
-        // Deactivate hitbox when leaving any attack state via interrupt
         bool leavingAttack = exiting == EnemyStateID.Windup ||
                              exiting == EnemyStateID.Attacking ||
                              exiting == EnemyStateID.Recovery;
@@ -450,25 +364,17 @@ public class EnemyController : MonoBehaviour, IDamageable
             if (attackHitbox != null) attackHitbox.DeactivateHitbox();
     }
 
-    // ════════════════════════════════════════════════════════════════════════
-    // IDamageable
-    // ════════════════════════════════════════════════════════════════════════
 
     public void TakeDamage(int amount, Vector2 knockback, bool knockdown = false)
     {
         if (!IsAlive || CurrentState == EnemyStateID.Dead) return;
 
-        // Block mitigation
         if (CurrentState == EnemyStateID.Blocking)
         {
-            // Check if the incoming attack overrides block
-            // (AttackHitbox doesn't carry EnemyAttackData flags directly,
-            //  so we use a simple damage reduction for now)
             amount = Mathf.RoundToInt(amount * blockDamageMultiplier);
             knockdown = false;
             knockback *= 0.2f;
 
-            // Reduced damage still applies — no state change while blocking
             _currentHealth -= amount;
             if (_currentHealth <= 0) { _currentHealth = 0; TransitionTo(EnemyStateID.Dead); }
             return;
@@ -490,10 +396,6 @@ public class EnemyController : MonoBehaviour, IDamageable
         TransitionTo(knockdown ? EnemyStateID.KnockedDown : EnemyStateID.Hurt);
     }
 
-    // ════════════════════════════════════════════════════════════════════════
-    // Physics helpers
-    // ════════════════════════════════════════════════════════════════════════
-
     private void ApplyFriction()
     {
         _velX = Mathf.MoveTowards(_velX, 0f, stats.deceleration * Time.deltaTime);
@@ -509,9 +411,6 @@ public class EnemyController : MonoBehaviour, IDamageable
         _jumpHeight += _jumpVelocity * Time.deltaTime;
     }
 
-    // ════════════════════════════════════════════════════════════════════════
-    // Helpers
-    // ════════════════════════════════════════════════════════════════════════
 
     private void FacePlayer()
     {
@@ -535,9 +434,6 @@ public class EnemyController : MonoBehaviour, IDamageable
         Destroy(gameObject);
     }
 
-    // ════════════════════════════════════════════════════════════════════════
-    // Animator
-    // ════════════════════════════════════════════════════════════════════════
 
     private void UpdateAnimator()
     {
@@ -545,9 +441,6 @@ public class EnemyController : MonoBehaviour, IDamageable
         animator.SetInteger(AnimStateID, (int)CurrentState);
     }
 
-    // ════════════════════════════════════════════════════════════════════════
-    // Gizmos
-    // ════════════════════════════════════════════════════════════════════════
 
     private void OnDrawGizmosSelected()
     {

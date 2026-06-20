@@ -78,6 +78,8 @@ public class EnemyAIBrain : MonoBehaviour
 
     public CombatDirector CombatDirector;
 
+    private EnemyRole _roleBeforeRetreat;
+
 
 
     private void Awake()
@@ -117,7 +119,7 @@ public class EnemyAIBrain : MonoBehaviour
     {
         if (!_controller.IsAlive) return;
 
-        // Don't make AI decisions while the controller is handling reactive states
+        //The brain won't make AI decisions while the controller is handling reactive states
         if (_controller.IsInReactiveState()) return;
 
         TickTimers();
@@ -131,7 +133,7 @@ public class EnemyAIBrain : MonoBehaviour
         if (role == CurrentRole) return;
         CurrentRole = role;
 
-        // Immediately react to role changes
+        // Immediately reacts to role changes
         switch (role)
         {
             case EnemyRole.Attacker:
@@ -204,7 +206,7 @@ public class EnemyAIBrain : MonoBehaviour
         }
         else
         {
-            Vector2 dir = toTarget.normalized * _speedMultiplier * 0.5f; // half speed while wandering
+            Vector2 dir = toTarget.normalized * _speedMultiplier * 0.5f; // half speed while wandering, probably should turn this into a modifiable variable
             _controller.SetMoveCommand(dir);
         }
     }
@@ -254,8 +256,7 @@ public class EnemyAIBrain : MonoBehaviour
         SetBrainState(BrainState.RequestingAttack);
     }
 
-    // Actively asks the director for a token each frame until granted or
-    // the player moves out of range.
+    // Actively asks the director for a token each frame until granted or the player moves out of range.
     private void TickRequestingAttack()
     {
         _controller.SetMoveCommand(Vector2.zero);
@@ -285,7 +286,7 @@ public class EnemyAIBrain : MonoBehaviour
         // If denied, stays in RequestingAttack and try again next frame
     }
 
-    // Wait for EnemyController to signal the attack is complete.
+    // Waits for EnemyController to signal the attack is complete.
     private void TickAttacking()
     {
         // EnemyController.IsAttacking goes false when the attack finishes
@@ -310,13 +311,13 @@ public class EnemyAIBrain : MonoBehaviour
 
         if (_brainTimer <= 0f)
         {
+            Debug.Log("Back to old role");
             _controller.SetMoveCommand(Vector2.zero);
             // Return to whatever role the director assigned
-            AssignRole(CurrentRole);
+            AssignRole(_roleBeforeRetreat);
         }
     }
 
-    // ── TAUNTING ──────────────────────────────────────────────────────────────
     private void TickTaunting()
     {
         _controller.SetMoveCommand(Vector2.zero);
@@ -334,7 +335,7 @@ public class EnemyAIBrain : MonoBehaviour
     {
         _brainTimer -= Time.deltaTime;
 
-        // Drop block if timer expires or player is no longer attacking
+        // Drops block if timer expires or player is no longer attacking
         bool playerAttacking = _playerController != null &&
             (_playerController.CurrentState == PlayerStateID.Attacking ||
              _playerController.CurrentState == PlayerStateID.AirAttacking);
@@ -372,6 +373,7 @@ public class EnemyAIBrain : MonoBehaviour
         {
             case BrainState.Retreating:
                 _brainTimer = retreatDuration;
+                _roleBeforeRetreat = CurrentRole;
                 CurrentRole = EnemyRole.Retreating;
                 break;
             case BrainState.Taunting:
@@ -416,7 +418,7 @@ public class EnemyAIBrain : MonoBehaviour
         float randX = transform.position.x + Random.Range(-wanderRadius, wanderRadius);
         float randY = _controller.GroundY + Random.Range(-wanderRadius * 0.5f, wanderRadius * 0.5f);
 
-        // Keep within depth band relative to player
+        // Keep within depth band relative to player, might change later
         if (_playerController != null)
             randY = Mathf.Clamp(randY,
                 playerGroundY - wanderMaxDepthFromPlayer,
@@ -424,7 +426,7 @@ public class EnemyAIBrain : MonoBehaviour
 
         _wanderTarget = new Vector2(randX, randY);
         _hasWanderTarget = true;
-        _brainTimer = 3f;   // max time to reach target before repicking
+        _brainTimer = 3f;   // max time to reach target before picking again
     }
 
     private bool IsInRangeForAnyAttack()
@@ -480,7 +482,7 @@ public class EnemyAIBrain : MonoBehaviour
 
     private void ApplyPresenceReaction(PresenceReaction reaction)
     {
-        // Applied additively — multiple reactions stack
+        // Applied additively, multiple reactions stack
         _speedMultiplier += reaction.speedModifier - 1f;
         _aggressionMultiplier += reaction.aggressionModifier - 1f;
 
@@ -490,7 +492,7 @@ public class EnemyAIBrain : MonoBehaviour
 
     private void RebuildPresenceMultipliers()
     {
-        // Reset to base then reapply all currently-valid reactions
+        // Reset to base then reapply all currently valid reactions
         _speedMultiplier = 1f;
         _aggressionMultiplier = 1f;
 

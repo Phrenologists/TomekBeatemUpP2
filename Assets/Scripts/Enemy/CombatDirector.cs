@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class CombatDirector : MonoBehaviour
 {
-    // ── Singleton ─────────────────────────────────────────────────────────────
     public static CombatDirector Instance { get; private set; }
 
-    // ── Inspector ─────────────────────────────────────────────────────────────
     [Header("Token Budget")]
     [Tooltip("Base token budget available at intensity 0.")]
     [SerializeField] private int baseTokenBudget = 3;
@@ -46,10 +44,7 @@ public class CombatDirector : MonoBehaviour
 
     public float Intensity => _intensity;
     public int CurrentBudget => _currentBudget;
-    public int MaxBudget => Mathf.RoundToInt(Mathf.Lerp(
-                                        baseTokenBudget,
-                                        baseTokenBudget + bonusBudgetAtMaxIntensity,
-                                        _intensity));
+    public int MaxBudget => Mathf.RoundToInt(Mathf.Lerp(baseTokenBudget, baseTokenBudget + bonusBudgetAtMaxIntensity, _intensity));
 
     private float _intensity = 0f;
     private int _currentBudget = 0;
@@ -160,8 +155,7 @@ public class CombatDirector : MonoBehaviour
     }
 
 
-    public int GetHeldTokens(EnemyAIBrain brain) =>
-        _heldTokens.TryGetValue(brain, out int held) ? held : 0;
+    public int GetHeldTokens(EnemyAIBrain brain) => _heldTokens.TryGetValue(brain, out int held) ? held : 0;
 
 
     public void AddKill(float killValue = 1f)
@@ -184,11 +178,9 @@ public class CombatDirector : MonoBehaviour
     }
 
 
-    public bool IsPresent(string typeTag) =>
-        _presenceCounts.TryGetValue(typeTag, out int count) && count > 0;
+    public bool IsPresent(string typeTag) => _presenceCounts.TryGetValue(typeTag, out int count) && count > 0;
 
-    public int CountPresent(string typeTag) =>
-        _presenceCounts.TryGetValue(typeTag, out int count) ? count : 0;
+    public int CountPresent(string typeTag) => _presenceCounts.TryGetValue(typeTag, out int count) ? count : 0;
 
     public IEnumerable<string> PresentTypes() => _presenceCounts.Keys;
 

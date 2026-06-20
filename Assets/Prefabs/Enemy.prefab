@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 1603683349084234543}
   - component: {fileID: 8853318681060732573}
   - component: {fileID: 7369051298649337952}
+  - component: {fileID: 5738112034375352451}
+  - component: {fileID: 2832302248101324896}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -125,7 +127,48 @@ MonoBehaviour:
   attackHitbox: {fileID: 249094553715026481}
   groundYMin: -3
   groundYMax: 3
-  _attackCooldownTimer: 0
+  blockDamageMultiplier: 0.25
+--- !u!114 &5738112034375352451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 528042091924352531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 702020a4c99dc5c4fad83a921a607427, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  typeTag: Grunt
+  roster: {fileID: 11400000, guid: a8a9cda5f64ef44428e7f3f4cbcb97b6, type: 2}
+  wanderRadius: 1.5
+  wanderPauseMin: 0.5
+  wanderPauseMax: 1.8
+  wanderMaxDepthFromPlayer: 2
+  tauntChance: 0.25
+  tauntCooldown: 4
+  tauntDuration: 1.2
+  blockChancePerSecond: 0.3
+  maxBlockDuration: 1.5
+  blockCooldown: 2
+  retreatDistance: 2
+  retreatSpeedMult: 0.8
+  retreatDuration: 0.6
+  presenceReactions: []
+  CombatDirector: {fileID: 0}
+--- !u!114 &2832302248101324896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 528042091924352531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94eead12b6c762446a4e4044e3d10c79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3607287935349947296
 GameObject:
   m_ObjectHideFlags: 0

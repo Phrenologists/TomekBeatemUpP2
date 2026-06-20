@@ -1,5 +1,4 @@
-﻿// EnemyAttackRoster.cs
-// ScriptableObject that holds an ordered list of EnemyAttackData assets
+﻿// ScriptableObject that holds an ordered list of EnemyAttackData assets
 // for a single enemy type. EnemyAIBrain iterates this list when selecting
 // an attack, so order matters, preffered attack should be put first.
 
