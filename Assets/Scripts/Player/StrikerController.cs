@@ -24,6 +24,13 @@ public class StrikerController : MonoBehaviour
 
     private static readonly int AnimAttackTrigger = Animator.StringToHash("attack");
 
+    private AttackEffectPlayer _effectPlayer;
+
+    private void Awake()
+    {
+        _effectPlayer = GetComponent<AttackEffectPlayer>();
+    }
+
     public void Activate(StrikerData data, Vector2 spawnPosition, bool isLB, bool facingRight, Action onComplete = null)
     {
         if (_isActive) return;
@@ -142,7 +149,12 @@ public class StrikerController : MonoBehaviour
 
     private IEnumerator RunAttackPhases(AttackData attack)
     {
+        _effectPlayer?.TriggerEffectsForPhase(attack.effects, AttackPhase.Startup, _facingRight);
+
         yield return new WaitForSeconds(attack.StartupDuration);
+
+        _effectPlayer?.TriggerEffectsForPhase(attack.effects, AttackPhase.Active, _facingRight);
+
 
         if (hitbox != null)
         {
@@ -168,6 +180,7 @@ public class StrikerController : MonoBehaviour
         yield return new WaitForSeconds(attack.ActiveDuration);
 
         if (hitbox != null) hitbox.DeactivateHitbox();
+        _effectPlayer?.TriggerEffectsForPhase(attack.effects, AttackPhase.Recovery, _facingRight);
 
     }
 
@@ -177,6 +190,7 @@ public class StrikerController : MonoBehaviour
     {
         StopAllCoroutines();
         if (hitbox != null) hitbox.DeactivateHitbox();
+        _effectPlayer?.CancelAttackBoundEffects();
         _isActive = false;
         gameObject.SetActive(false);
     }

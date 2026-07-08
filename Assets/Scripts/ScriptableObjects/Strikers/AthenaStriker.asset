@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a862f64ffc3f2f241bbd5a7d0dd7ae12, type: 3}
+  m_Name: AthenaStriker
+  m_EditorClassIdentifier: 
+  strikerName: Striker
+  portrait: {fileID: 21300000, guid: bc1b1c42eff82fe44bfa4f21dd40384b, type: 3}
+  prefab: {fileID: 2465416510750919764, guid: 2e6526da5f241f242abdf6a4fb8897d2, type: 3}
+  entryDuration: 0.15
+  preAttackDelay: 0.05
+  exitDuration: 0.2
+  cooldown: 0
+  lbAttack: {fileID: 11400000, guid: 689733b87985b1c449c037ef98b33932, type: 2}
+  rbAttack: {fileID: 11400000, guid: c996c438f1588bb4fad6ff12db635b0c, type: 2}
+  faceLeft: 1
+  entryEase: 6
+  exitEase: 5
+  flashOnEntry: 0
+  flashCount: 3

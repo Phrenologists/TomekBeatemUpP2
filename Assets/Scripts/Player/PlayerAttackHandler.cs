@@ -1,5 +1,5 @@
-﻿
-using UnityEngine;
+﻿using UnityEngine;
+using System.Collections.Generic;
 
 public class PlayerAttackHandler : MonoBehaviour
 {
@@ -38,11 +38,17 @@ public class PlayerAttackHandler : MonoBehaviour
 
     private int _currentTriggerHash;
 
+    private AttackEffectPlayer _effectPlayer;
+
+    private float _phaseElapsed;
+    private HashSet<int> _triggeredEffects = new HashSet<int>();
+
     private void Awake()
     {
         _energy = GetComponent<PlayerEnergy>();
         if (runtimeHitbox != null)
             runtimeHitbox.OnHitConnected += HandleHitConnected;
+        _effectPlayer = GetComponent<AttackEffectPlayer>();
     }
 
     private void OnDestroy()
@@ -97,6 +103,7 @@ public class PlayerAttackHandler : MonoBehaviour
         }
 
         _phaseTimer -= Time.deltaTime;
+        _phaseElapsed += Time.deltaTime;
 
         _currentMovement = GetMovement(facingRight);
 
@@ -109,6 +116,7 @@ public class PlayerAttackHandler : MonoBehaviour
             }
         }
 
+        _effectPlayer?.TickEffects(_currentAttack.effects, _phase, _phaseElapsed, facingRight,_triggeredEffects);
 
         switch (_phase)
         {
@@ -149,6 +157,9 @@ public class PlayerAttackHandler : MonoBehaviour
         IsFrozenInAir = false;
         _airStopHitTimer = 0f;
         _isAirSequence = false;
+        _effectPlayer?.CancelAttackBoundEffects();
+        _phaseElapsed = 0f;
+        _triggeredEffects.Clear();
     }
 
 
@@ -158,6 +169,8 @@ public class PlayerAttackHandler : MonoBehaviour
         _isActive = true;
         _hasBufferedInput = false;
         _bufferedInputAction = null;
+        _phaseElapsed = 0f;
+        _triggeredEffects.Clear();
 
         DeactivateHitbox();
 
@@ -178,6 +191,7 @@ public class PlayerAttackHandler : MonoBehaviour
     {
         _phase = AttackPhase.Active;
         _phaseTimer = _currentAttack.ActiveDuration;
+        _phaseElapsed = 0f;
 
         if (runtimeHitbox != null)
         {
@@ -226,6 +240,9 @@ public class PlayerAttackHandler : MonoBehaviour
         else
         {
             // Sequence over
+            _effectPlayer?.CancelAttackBoundEffects();
+            _phaseElapsed = 0f;
+            _triggeredEffects.Clear();
             _isActive = false;
             _hasBufferedInput = false;
             _bufferedInputAction = null;
@@ -234,7 +251,6 @@ public class PlayerAttackHandler : MonoBehaviour
             OnAttackSequenceEnded?.Invoke();
             IsFrozenInAir = false;
             _airStopHitTimer = 0f;
-            OnAttackSequenceEnded?.Invoke();
         }
     }
     private Vector2 GetMovement(bool facingRight)
