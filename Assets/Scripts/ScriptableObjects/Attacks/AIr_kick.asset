@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackName: Air Kick
   startupFrames: 5
-  activeFrames: 3
+  activeFrames: 20
   recoveryFrames: 12
   targetFPS: 60
-  hitboxOffset: {x: 0.6, y: 0}
-  hitboxSize: {x: 0.8, y: 0.6}
+  hitboxOffset: {x: 3, y: 1}
+  hitboxSize: {x: 1.5, y: 3}
   damage: 15
   knockback: {x: 3, y: 1.5}
   causesKnockdown: 1
@@ -27,3 +27,12 @@ MonoBehaviour:
   activeLungeSpeed: 1.5
   fixedFollowUp: {fileID: 0}
   branchFollowUps: []
+  energyCost: 0
+  startupMovement: {x: 0, y: 0}
+  activeMovement: {x: 1.5, y: 0}
+  recoveryMovement: {x: 0, y: 0}
+  strikerSpawnOffset: {x: 3, y: 0}
+  strikerEntryStartOffset: {x: 2, y: 0}
+  strikerExitEndOffset: {x: 2, y: 0}
+  airStopMode: 2
+  airStopOnHitDuration: 0.15

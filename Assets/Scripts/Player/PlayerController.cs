@@ -294,15 +294,14 @@ public class PlayerController : MonoBehaviour
 
     private void TickAirAttacking()
     {
-        TickFallPhysics();
+        
         /*
         _attackTimer -= Time.deltaTime;
 
         if (_attackTimer <= 0f || IsGrounded)
             TransitionTo(IsGrounded ? PlayerStateID.Idle : PlayerStateID.Falling);
         */
-        Vector2 move = _attackHandler.CurrentMovement;
-        _velX = Mathf.Lerp(_velX, move.x, 10f * Time.deltaTime);
+        
 
 
         if (_input.AnyAttackPressed && _input.LastAttackActionPressed != null)
@@ -310,6 +309,18 @@ public class PlayerController : MonoBehaviour
 
         _attackHandler.Tick(_facingRight);
 
+        if(_attackHandler.IsFrozenInAir)
+        {
+            _jumpVelocity = 0f;
+        }
+        else
+        {
+            TickFallPhysics();
+        }
+
+        Vector2 move = _attackHandler.CurrentMovement;
+        _velX = Mathf.Lerp(_velX, move.x, 10f * Time.deltaTime);
+        
         if (IsGrounded && !_attackHandler.IsAttacking)
             TransitionTo(PlayerStateID.Idle);
     }
@@ -461,7 +472,7 @@ public class PlayerController : MonoBehaviour
         return false;
     }
 
-    //To zostalo z wczesniejszej wersji, jak nie bedzie potrzebne to usune
+    //Leftover of the previous version, here in case smth goes wrong with the current system
     /*
     private bool TryAirAttack()
     {
@@ -529,8 +540,20 @@ public class PlayerController : MonoBehaviour
         }
 
         _velX = knockback.x;
-        _jumpVelocity = knockback.y;
-        if (knockback.y > 0f) _jumpHeight = 0.01f;  // lift off floor
+        //_jumpVelocity = knockback.y;
+        if (knockback.y > 0f)
+        {
+            _jumpVelocity = knockback.y;
+            if (IsGrounded)
+            { 
+                _jumpHeight = 0.01f; // lift off floor
+            } 
+        }
+
+        else if (knockback.y < 0f)
+        {
+            _jumpVelocity = knockback.y;   
+        }
 
         if (knockdown)
         {

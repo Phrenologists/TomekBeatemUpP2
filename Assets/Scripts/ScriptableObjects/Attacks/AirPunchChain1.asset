@@ -17,13 +17,24 @@ MonoBehaviour:
   activeFrames: 3
   recoveryFrames: 12
   targetFPS: 60
-  hitboxOffset: {x: 0.6, y: 0}
-  hitboxSize: {x: 0.8, y: 0.6}
+  hitboxOffset: {x: 1.5, y: 0}
+  hitboxSize: {x: 1.2, y: 1.4}
   damage: 15
   knockback: {x: 3, y: 1.5}
   causesKnockdown: 0
   hitStopDuration: 0.05
   animTriggerName: AirPunchChain1
   activeLungeSpeed: 1.5
-  fixedFollowUp: {fileID: 11400000, guid: 6dc5ea5d6169d8b4b8f5d8ed45ac6b4c, type: 2}
-  branchFollowUps: []
+  fixedFollowUp: {fileID: 0}
+  branchFollowUps:
+  - inputAction: LightAttack
+    followUp: {fileID: 11400000, guid: ef9c5df34214bcf489caeacd440c8f28, type: 2}
+  energyCost: 0
+  startupMovement: {x: 0, y: 0}
+  activeMovement: {x: 1.5, y: 0}
+  recoveryMovement: {x: 0, y: 0}
+  strikerSpawnOffset: {x: 3, y: 0}
+  strikerEntryStartOffset: {x: 2, y: 0}
+  strikerExitEndOffset: {x: 2, y: 0}
+  airStopMode: 1
+  airStopOnHitDuration: 0.15

@@ -75,10 +75,8 @@ public class AttackData : ScriptableObject
 
     public Vector2 recoveryMovement = Vector2.zero;
 
-    // These fields are only used when this AttackData is assigned as a striker
-    // attack. They define where the striker stands relative to the call target,
-    // so different moves can appear from different positions (e.g. lbAttack
-    // drops from above, rbAttack slides in from the side).
+    // These fields are only used when this AttackData is assigned as a striker attack. They define where the striker stands relative to the call target,
+    // so different moves can appear from different positions (e.g. lbAttack  drops from above, rbAttack slides in from the side).
     [Header("Striker Positioning (only used when assigned to a StrikerData)")]
     [Tooltip("Offset from the call target's GROUND position (GroundY, not world Y) " +
              "where the striker stands during the attack. " +
@@ -91,6 +89,19 @@ public class AttackData : ScriptableObject
 
     [Tooltip("Offset from the spawn position where the striker moves when exiting.")]
     public Vector2 strikerExitEndOffset = new Vector2(2f, 0f);
+
+    [Header("Air Behaviour")]
+    [Tooltip("How this attack behaves in the air")]
+    public AirStopMode airStopMode = AirStopMode.None;
+
+    [Tooltip("How long the player is frozen after hitting an enemy, only works in StopOnHit mode")]
+    [Range(0f, 1f)] public float airStopOnHitDuration = 0.15f;
+
+    [Header("Visual Effects")]
+    [Tooltip("Effects to play during this attack. Each entry specifies what, when, " +
+             "and where — AttackEffectPlayer resolves the named attachment point " +
+             "to the actual Transform on the character.")]
+    public System.Collections.Generic.List<AttackEffectEntry> effects = new System.Collections.Generic.List<AttackEffectEntry>();
 
     public Vector2 GetMovementForPhase(AttackPhase phase)
     {
@@ -125,4 +136,11 @@ public class BranchEntry
     public string inputAction;
     [Tooltip("The attack to chain into.")]
     public AttackData followUp;
+}
+
+public enum AirStopMode
+{
+    None,
+    AlwaysStopInAir,
+    StopOnHit
 }

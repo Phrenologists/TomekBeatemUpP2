@@ -71,6 +71,8 @@ public class EnemyController : MonoBehaviour, IDamageable
 
     private Transform _playerTransform;
 
+    private bool hasBeenHit = false ;
+
 
     private void Awake()
     {
@@ -367,6 +369,7 @@ public class EnemyController : MonoBehaviour, IDamageable
 
     public void TakeDamage(int amount, Vector2 knockback, bool knockdown = false)
     {
+        
         if (!IsAlive || CurrentState == EnemyStateID.Dead) return;
 
         if (CurrentState == EnemyStateID.Blocking)
@@ -389,9 +392,37 @@ public class EnemyController : MonoBehaviour, IDamageable
             return;
         }
 
-        _velX = knockback.x;
-        _jumpVelocity = knockback.y;
-        if (knockback.y > 0f) _jumpHeight = 0.01f;
+        if(hasBeenHit)
+        {
+            _velX = knockback.x;
+            // _jumpVelocity = knockback.y;
+            if (knockback.y > 0f)
+            {
+                _jumpVelocity = knockback.y;
+                if (IsGrounded)
+                {
+                    _jumpHeight = 0.01f; // lift off floor
+                }
+
+            }
+            else if (knockback.y < 0f)
+            {
+                // Spike
+                _jumpVelocity = knockback.y;
+            }
+
+            //Tutaj, dla lepszego gamefeelu można dodać później coś w stylu "tylko jeśli atak nadejdzie od postaci w powietrzu"
+            if (!IsGrounded)
+            {
+                Debug.Log("Gówno");
+                //_jumpVelocity = 0f;
+                _jumpVelocity = Mathf.Max(_jumpVelocity, stats.juggleUplift);
+            }
+        }
+
+        
+
+        hasBeenHit = true;
 
         TransitionTo(knockdown ? EnemyStateID.KnockedDown : EnemyStateID.Hurt);
     }

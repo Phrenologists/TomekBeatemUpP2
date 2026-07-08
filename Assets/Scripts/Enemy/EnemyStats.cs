@@ -39,4 +39,10 @@ public class EnemyStats : ScriptableObject
 
     [Header("Score / Drops")]
     public int scoreValue = 100;
+
+    [Header("Juggle")]
+    [Tooltip("Minimum upward velocity applied when an airborne enemy is hit with a " +
+         "horizontal attack. Keeps them in the air for combo continuation. " +
+         "Higher = floatier juggle, lower = they drop faster between hits.")]
+    public float juggleUplift = 3f;
 }

@@ -20,7 +20,7 @@ MonoBehaviour:
   hitboxOffset: {x: 2, y: 0}
   hitboxSize: {x: 1, y: 1}
   damage: 15
-  knockback: {x: 3, y: 1.5}
+  knockback: {x: 3, y: 0}
   causesKnockdown: 0
   hitStopDuration: 0.05
   animTriggerName: LightPunchChain2
@@ -33,3 +33,8 @@ MonoBehaviour:
   startupMovement: {x: 0, y: 0}
   activeMovement: {x: 1.5, y: 0}
   recoveryMovement: {x: 0, y: 0}
+  strikerSpawnOffset: {x: 3, y: 0}
+  strikerEntryStartOffset: {x: 2, y: 0}
+  strikerExitEndOffset: {x: 2, y: 0}
+  airStopMode: 0
+  airStopOnHitDuration: 0.15

@@ -21,6 +21,8 @@ public class PlayerAttackHandler : MonoBehaviour
         ? _currentAttack.activeLungeSpeed
         : 0f;
 
+    public bool IsFrozenInAir {  get; private set; }
+
     public System.Action OnAttackSequenceEnded;
 
     private bool _isActive;
@@ -31,11 +33,32 @@ public class PlayerAttackHandler : MonoBehaviour
     private string _bufferedInputAction;
     private bool _hasBufferedInput;
 
+    private bool _isAirSequence;
+    private float _airStopHitTimer;
+
     private int _currentTriggerHash;
 
     private void Awake()
     {
         _energy = GetComponent<PlayerEnergy>();
+        if (runtimeHitbox != null)
+            runtimeHitbox.OnHitConnected += HandleHitConnected;
+    }
+
+    private void OnDestroy()
+    {
+        if (runtimeHitbox != null)
+            runtimeHitbox.OnHitConnected -= HandleHitConnected;
+    }
+
+    private void HandleHitConnected()
+    {
+        if( !_isActive || _currentAttack == null) return;
+        if (!_isAirSequence) return;
+        if (_currentAttack.airStopMode != AirStopMode.StopOnHit) return;
+
+        IsFrozenInAir = true;
+        _airStopHitTimer = _currentAttack.airStopOnHitDuration;
     }
 
     public bool TryStartAttack(string inputActionName, bool grounded)
@@ -59,6 +82,8 @@ public class PlayerAttackHandler : MonoBehaviour
             return false;
         }
 
+        _isAirSequence = !grounded;
+
         StartAttack(data);
         return true;
     }
@@ -74,6 +99,15 @@ public class PlayerAttackHandler : MonoBehaviour
         _phaseTimer -= Time.deltaTime;
 
         _currentMovement = GetMovement(facingRight);
+
+        if (_isAirSequence && IsFrozenInAir && _currentAttack != null && _currentAttack.airStopMode == AirStopMode.StopOnHit)
+        {
+            _airStopHitTimer -= Time.deltaTime;
+            if (_airStopHitTimer <= 0)
+            {
+                IsFrozenInAir = false;
+            }
+        }
 
 
         switch (_phase)
@@ -112,6 +146,9 @@ public class PlayerAttackHandler : MonoBehaviour
         _currentAttack = null;
         _currentMovement = Vector2.zero;
         _phase = AttackPhase.Startup;
+        IsFrozenInAir = false;
+        _airStopHitTimer = 0f;
+        _isAirSequence = false;
     }
 
 
@@ -132,6 +169,9 @@ public class PlayerAttackHandler : MonoBehaviour
 
         _phase = AttackPhase.Startup;
         _phaseTimer = data.StartupDuration;
+
+        _airStopHitTimer = 0f;
+        IsFrozenInAir = _isAirSequence && data.airStopMode == AirStopMode.AlwaysStopInAir;
     }
 
     private void EnterActive(bool facingRight)
@@ -191,6 +231,9 @@ public class PlayerAttackHandler : MonoBehaviour
             _bufferedInputAction = null;
             _currentAttack = null;
             _currentMovement = Vector2.zero;
+            OnAttackSequenceEnded?.Invoke();
+            IsFrozenInAir = false;
+            _airStopHitTimer = 0f;
             OnAttackSequenceEnded?.Invoke();
         }
     }

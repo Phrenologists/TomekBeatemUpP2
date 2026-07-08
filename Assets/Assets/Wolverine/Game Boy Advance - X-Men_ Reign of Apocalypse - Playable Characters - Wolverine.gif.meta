@@ -1,0 +1,3610 @@
+fileFormatVersion: 2
+guid: cc2d2e96696b0af4288a95b9196597ba
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 939
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22c90f3826bed024b866146d192a8396
+      internalID: 1237177286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 931
+        width: 51
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f09776138483bd24cbae086bc729656f
+      internalID: -1291031829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_2
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 931
+        width: 51
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a43c0f84cbdf241439f5040a698676d6
+      internalID: -2136159385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_3
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 930
+        width: 51
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9088facc42e6424ea7a0f25e52392a1
+      internalID: -612062430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_4
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 930
+        width: 51
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e047e3ce17c0c884fb668a0cb2e607f6
+      internalID: -177835777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_5
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 931
+        width: 51
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dae751a097f0b048a96533010af163a
+      internalID: 1662111776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_6
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 932
+        width: 51
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c9af6ce28bb74d44bbe46e226d68d8e
+      internalID: -1372446304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_7
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 933
+        width: 51
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e420ad39d214d0144ac250a62b6c5d46
+      internalID: 127340493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_8
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 932
+        width: 52
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82c3220fa90ce9d41b39121064d896cc
+      internalID: 494031833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_9
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 933
+        width: 52
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 143dc9466468db5478d8af9d3db0e2f5
+      internalID: -805613893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_10
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 933
+        width: 52
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7146e07695296f54cb8b1f3b5b548a29
+      internalID: 724408523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_11
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 890
+        width: 61
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29d8700aedec68c4ea3c8696d3b5e333
+      internalID: -1488572865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_12
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 872
+        width: 37
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1487a2758122e6848a3eedfaf4028fb7
+      internalID: -1080460950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_13
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 867
+        width: 46
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d1cb06daa71fc3458819633d97d7aad
+      internalID: 1790435838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_14
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 866
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b4dc08c2c4ded648aad3944dd04f4dc
+      internalID: -659521809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_15
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 877
+        width: 67
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93009317a4e925b4f965c7e09ef6e99f
+      internalID: -1803243611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_16
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 873
+        width: 56
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86f259fea6a6f2b43859db58dff09f2a
+      internalID: -1068227432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_17
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 866
+        width: 49
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0dbe82740cda0c419824f27f94bb0d8
+      internalID: -684865844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_18
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 860
+        width: 49
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c42adbc23d2f5ba428adea749a1c0131
+      internalID: -153162524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_19
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 792
+        width: 47
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 260ab4c0d57078342b5a1fcdcdc2e9a8
+      internalID: -1866895127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_20
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 792
+        width: 50
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a17e6314ab60cf04aa1fec381ed9111f
+      internalID: 988487963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_21
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 797
+        width: 67
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e0b6840526f2f9469ff29b847414fb6
+      internalID: 69149543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_22
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 796
+        width: 43
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8adfa8a93efe0f4faaa4211cd4f5b94
+      internalID: -1103235327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_23
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 797
+        width: 44
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02010964a37fe724dbd94ffafefa1cf5
+      internalID: 216975052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_24
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 800
+        width: 45
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45665666211e02343a018c8850b6730b
+      internalID: 1784904028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_25
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 802
+        width: 47
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec40ee6cd1aca424fa3f1c81b28d0598
+      internalID: 702271595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_26
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 822
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8c8b3820e50286448b7615c44a2b8ad
+      internalID: 777673122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_27
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 820
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1506954ba6494b04a88baf5d25737de0
+      internalID: 1268634463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_28
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 820
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7695e3f0a643f9f4189911ba91aaa19b
+      internalID: -492457739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_29
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 822
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c0ed18207e0f974d9b4af118b4e3ab3
+      internalID: 1543708884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_30
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 822
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 458761f4f4ba8964eb9c241ba947148a
+      internalID: 2011879911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_31
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 820
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4de03c2fb7318b64f9a842f2c5221ad6
+      internalID: -1207129120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_32
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 822
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acaacea1cbca8094cbfcdb1c3c6d089b
+      internalID: -431752111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_33
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 822
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c7c4d1fcfa6f83478378661f38131a7
+      internalID: -2139061107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_34
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 822
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83c36c38b92b45d43a1e6486e05f4ab0
+      internalID: -1122143622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_35
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 822
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a55d7b8aed73cb648b5894baa1167c05
+      internalID: 1199073550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_36
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 822
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53b4050ee0b82274db1975dfb556adb0
+      internalID: -227960083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_37
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 822
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf5da4577551c7f459782d9beb51162f
+      internalID: 2125576188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_38
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 820
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a0f1f4595c070c4f8de53897a544e11
+      internalID: -1797508842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_39
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 822
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ce04419f983bdb40a1aa3c31de5df5e
+      internalID: 2015102015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_40
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 820
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66316fdb361c611439378e3a0d566fc5
+      internalID: -1227993502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_41
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 729
+        width: 44
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f054cfd33bd88744c9ce083e3c533cd8
+      internalID: 1691478655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_42
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 727
+        width: 50
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e68957248bd818a4995899321fb43b9d
+      internalID: 54210546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_43
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 729
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02794c9460dd4d0409dd2fb8f9be6747
+      internalID: -1503974535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_44
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 729
+        width: 36
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b64d3ada686fc364babb95fc9754a220
+      internalID: -1676362721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_45
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 733
+        width: 55
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f9e384a5bf3a7042a50b973016a72d0
+      internalID: -296920819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_46
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 740
+        width: 61
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 479fe94049a0a9e48bf3830a653ab2f5
+      internalID: -1255999682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_47
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 740
+        width: 68
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ab776257fff33f4b9a86067f502103f
+      internalID: 319500336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_48
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 735
+        width: 66
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d45f7457b7890c543aa010c46e7b8fd4
+      internalID: -1093432877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_49
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 735
+        width: 73
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76d878772f959204dac23f49086cf283
+      internalID: 1250599736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_50
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 735
+        width: 75
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af6e97d14d92f0b42a8ccb7bb738014d
+      internalID: -12526489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_51
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 669
+        width: 73
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce60633a86f0ea94787e7dcc694c2e87
+      internalID: -861086159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_52
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 670
+        width: 36
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 702dbef8b4b77a343ab05d041c97c8a8
+      internalID: 1375712278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_53
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 664
+        width: 44
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b962fe1a9bb919d49add7e462c198afa
+      internalID: 1647178521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_54
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 619
+        width: 101
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e72d0c926d58d654999b5e0f581cd077
+      internalID: 1001180752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_55
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 617
+        width: 104
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78db49d30c0ce7c43a68793d2b478f83
+      internalID: 488734334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_56
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 614
+        width: 85
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05dc8bd8c2aa0e442b8b710efed9dfb6
+      internalID: -1717206199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_57
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 612
+        width: 60
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0fd4459571dd2b4aa45a8ef3ac43801
+      internalID: 1833935271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_58
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 614
+        width: 54
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83f264af773a3644dac0b6b80a3040f6
+      internalID: -2020815914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_59
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 615
+        width: 57
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30f1315990a5d2d4a9a1d389158ef0a0
+      internalID: -439543411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_60
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 615
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6594dc1dcb6b6dc48a0ca0028e3e3e91
+      internalID: -1805659070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_61
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 611
+        width: 51
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ce15607e5a96104f91adf54d3794f12
+      internalID: 1029215501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_62
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 546
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e6c1c78fe6023a488c176a5d44d1305
+      internalID: 1049782792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_63
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 546
+        width: 70
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23d3abcce7cdb624cb105cc5ac9120cb
+      internalID: 1195331122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_64
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 546
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f2998bf07cdd30419fe698ec90818c9
+      internalID: 1645387661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_65
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 545
+        width: 88
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d6c5d45d510f764e8ec5a31c04b9d83
+      internalID: 873610573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_66
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 557
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ca32ff12b0e1c84e9175acc50124d55
+      internalID: 937189845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_67
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 557
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0dbfe20648818a4f8d96fc4c64452c1
+      internalID: -479468779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_68
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 545
+        width: 84
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f8581d82416a124b8a2b40141a5919b
+      internalID: -1354030667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_69
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 549
+        width: 60
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39c8111c5dde4a4428d3eaa4d29821b0
+      internalID: -1993599755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_70
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 499
+        width: 43
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f86060d81cb27bf4b8f88f1fb704bba3
+      internalID: 1162067110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_71
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 498
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2596cc1166c056b4185150a05ae56317
+      internalID: -85821796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_72
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 497
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab7d520cd74c2d24a85822527c48d889
+      internalID: -85733774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_73
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 495
+        width: 42
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fc1a46e51435a0489ee114b0aba05f8
+      internalID: 852867900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_74
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 496
+        width: 47
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d716c41b1a1894e41a62e264cfe22c2a
+      internalID: 1817883417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_75
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 495
+        width: 50
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab70b909302b6f64bb94b3c36d4e9b93
+      internalID: -763167720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_76
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 497
+        width: 46
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71d39947ec4a8a54586215478c4353fb
+      internalID: 875410716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_77
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 492
+        width: 39
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8199f024159b973459f8e618dcf778e4
+      internalID: 2095627917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_78
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 488
+        width: 36
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a98a2531e827ea488a4a5cad3074ca8
+      internalID: -1263845226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_79
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 488
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d6101016e2dbe346b13358453a3efe9
+      internalID: -1755809812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_80
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 488
+        width: 44
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75b3540679dacc849b5b8f553a77c698
+      internalID: 1807197010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_81
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 490
+        width: 49
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a99d637717119174ba5ac331e8559ca9
+      internalID: 373951474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_82
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 442
+        width: 44
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caff9693993700641b952a9f71070215
+      internalID: -1013190521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_83
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 443
+        width: 53
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2a9e9706aaafe447937bd200120032c
+      internalID: -1385733615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_84
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 432
+        width: 58
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e703cfdcc663494ebeb7f397ab823c4
+      internalID: -1261566186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_85
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 429
+        width: 58
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df615a7194ea41f43a7a7b3adaa0c395
+      internalID: -1341118470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_86
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 428
+        width: 56
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 941ef46661469c847b637f16fa053736
+      internalID: -317412705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_87
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 425
+        width: 42
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b364b9ceeac105f4b9cde91c949fc608
+      internalID: -1935090297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_88
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 426
+        width: 60
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61100a152a37b3a4c8a89e91beb02eaf
+      internalID: 2082245355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_89
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 432
+        width: 64
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43d5ef6b45fa73a40b9cde6081835e5c
+      internalID: 1115213208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_90
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 367
+        width: 43
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6260ac5ce743a4b4b9e81156dd2ad2d6
+      internalID: 1722415378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_91
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 368
+        width: 46
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f827f1a0a86089a428b384496b456f59
+      internalID: -1650055043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_92
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 369
+        width: 44
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5456e1bb8b35c3043ba0bd9ac1240ca4
+      internalID: -1362426302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_93
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 368
+        width: 66
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9b0191726ee44d4589679b39914d548
+      internalID: -988437180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_94
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 367
+        width: 43
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5c23bd3c728f624cae1820319eaf047
+      internalID: 403271581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_95
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 368
+        width: 43
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6490dfeaeb984d249b5bca137c4125f6
+      internalID: 2011768434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_96
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 369
+        width: 39
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65ec12a7d50ad3d4f866f91d16cd7622
+      internalID: -948182167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_97
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 367
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cbb751e1b2a48a4c802dd1ea798ac17
+      internalID: -604624567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_98
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 366
+        width: 44
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc2ee37f1b797d84d8e413e0350053e2
+      internalID: -1689264068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_99
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 366
+        width: 36
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29d0b0147eaea1f47a138b5a64f5fa15
+      internalID: -363606800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_100
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 364
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3983dd9169ad9445b15c2507d9b61a2
+      internalID: -1088305919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_101
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 364
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d896f43b65ccfc4dbb0754994aff10c
+      internalID: 1592530890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_102
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 359
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56a925c6ab4925d4da2fefe9a4a751b5
+      internalID: -1687601280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_103
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 299
+        width: 39
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaa5cbdecb6f69042a7afc3cb5902486
+      internalID: -586892145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_104
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 342
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d11039c7989709d48a8e53e85f546287
+      internalID: 550446029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_105
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 308
+        width: 59
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 656f3cc523a14664e97aba0715a294c1
+      internalID: -393869525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_106
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 310
+        width: 39
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e2ab0065258bda4c802d689d133017d
+      internalID: -1103654843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_107
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 312
+        width: 35
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4487fe6727de98e439bc0902c4e1ac4b
+      internalID: 91443957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_108
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 313
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 514c1355369f11e4ab63ad39e54e0ee6
+      internalID: 850450030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_109
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 313
+        width: 37
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06951f016e4e2ac4980060c1bf49b103
+      internalID: -1209517472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_110
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 308
+        width: 36
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8881bbc34c4bb22408319e999cf23ad9
+      internalID: -15243451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_111
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 299
+        width: 92
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a0a150f8afda9447809fc6467375d31
+      internalID: -723880363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_112
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 290
+        width: 86
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c54620e251ca10c40a0523f2653f2d4a
+      internalID: -857215913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_113
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 304
+        width: 55
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44d73bbf95006ba40831cf8d9aa07de1
+      internalID: 1545439132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_114
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 310
+        width: 35
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87a4207a9537b3848a854972d841f296
+      internalID: 1995840300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_115
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 305
+        width: 45
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1269d9705b1f7da4bab3d081c311633d
+      internalID: 2061245515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_116
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 234
+        width: 65
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2215a8287d9bf0f4b8ce65f8de98ec6d
+      internalID: -137999497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_117
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 241
+        width: 51
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4749de92444c5534baf6130f97fba30a
+      internalID: -240105226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_118
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 243
+        width: 55
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa7699009641fab468a419f60d663124
+      internalID: -594084379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_119
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 249
+        width: 60
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6e58eac08e433d4ca02d786b1a7d3f6
+      internalID: -1658517602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_120
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 234
+        width: 57
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd4443e77a920cf488f4882b7616e808
+      internalID: 1858225084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_121
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 257
+        width: 56
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f8a8eee81e776a409c848626d81fb91
+      internalID: 1951746539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_122
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 260
+        width: 57
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0240a53a944d43140854099a4dc06abd
+      internalID: -1728635515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_123
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 255
+        width: 56
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff0f1342b0f8f26408ce6a627faf1346
+      internalID: 711003983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_124
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 252
+        width: 39
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65069b4a80e527545966cabe8e6e1014
+      internalID: -1881091545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_125
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 170
+        width: 61
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ea7e3bbe7cc2034186731771a22360d
+      internalID: 1752641040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_126
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 145
+        width: 66
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3a98c7b51abcb54cbd9200953b7bdb8
+      internalID: 1350891891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_127
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 147
+        width: 57
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80e2dc82ac941014898f601fc3b2b66b
+      internalID: -43708922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_128
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 219
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afe5edcd13694e649bbb145bd192c1f4
+      internalID: 2136506139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_129
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 153
+        width: 58
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0106f97287df32a4b8db21845413d40a
+      internalID: 1180511714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_130
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 144
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c3d96e9cc668194eabd9248472e786c
+      internalID: -1715271036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_131
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 87
+        width: 48
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdcb2e522e8c74e45911c7735527a1fa
+      internalID: 839750482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_132
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 85
+        width: 40
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5317fc9c473905b42b89595b9b457889
+      internalID: -1133720530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_133
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 85
+        width: 40
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b15b2feec0200f642b5c8068bae52edb
+      internalID: 57466602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_134
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 87
+        width: 36
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c8f62b72c02b534a810805998103d0f
+      internalID: 806198745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_135
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 85
+        width: 39
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c6d49fe39dda1c4cac1ec2ed3d217c3
+      internalID: -1709974349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_136
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 82
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4693b2ab903c57a4e92b1302ded17266
+      internalID: 399954262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_137
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 76
+        width: 46
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c76b2534832c1e7448bd9c92c1370b5b
+      internalID: 1092017148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_138
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 77
+        width: 38
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9715908861ac31f4399f05cbc33a0ea8
+      internalID: 2015786760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_139
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 76
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c06edc9ba8c35dc42a5cd70604b54830
+      internalID: 984517068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_140
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 28
+        width: 51
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71e433dcf348faa49bc50556c5d6afa3
+      internalID: -1896606267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_141
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 21
+        width: 26
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1896ccc719894144cb74a7bf88b0db0c
+      internalID: -333945192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_142
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 35
+        width: 52
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b867b1bfb0d06d146b36d1f47a014b32
+      internalID: 165211837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_143
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 20
+        width: 72
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbae3660945c7a9409d8b23f98051fed
+      internalID: 910605919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_144
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 18
+        width: 61
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 160a3443b8231b74f9ab638699dbbecf
+      internalID: 382613604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_145
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 10
+        width: 51
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72b4e04e195250c478a7487213bff59c
+      internalID: -1912113776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_146
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 7
+        width: 45
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 517d0469c56761443990dde8f94a5e91
+      internalID: 164492461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_147
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 5
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 088c0bc82e78ff347bce246a18153ee0
+      internalID: 2144052968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_148
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 2
+        width: 32
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 507653dc899dcad4b8b83bae573a50c4
+      internalID: 988149059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_149
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 7
+        width: 42
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82df22fb2968a0e438f8eabaef182aae
+      internalID: -1650724765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_150
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 4
+        width: 49
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e82e1687826e05469a88c06a64be10f
+      internalID: -406239116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters -
+        Wolverine_151
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 6
+        width: 52
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23682a2c832474947adfe30be6362cf8
+      internalID: 593937191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_0: 1237177286
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_1: -1291031829
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_10: 724408523
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_100: -1088305919
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_101: 1592530890
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_102: -1687601280
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_103: -586892145
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_104: 550446029
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_105: -393869525
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_106: -1103654843
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_107: 91443957
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_108: 850450030
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_109: -1209517472
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_11: -1488572865
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_110: -15243451
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_111: -723880363
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_112: -857215913
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_113: 1545439132
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_114: 1995840300
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_115: 2061245515
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_116: -137999497
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_117: -240105226
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_118: -594084379
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_119: -1658517602
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_12: -1080460950
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_120: 1858225084
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_121: 1951746539
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_122: -1728635515
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_123: 711003983
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_124: -1881091545
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_125: 1752641040
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_126: 1350891891
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_127: -43708922
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_128: 2136506139
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_129: 1180511714
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_13: 1790435838
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_130: -1715271036
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_131: 839750482
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_132: -1133720530
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_133: 57466602
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_134: 806198745
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_135: -1709974349
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_136: 399954262
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_137: 1092017148
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_138: 2015786760
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_139: 984517068
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_14: -659521809
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_140: -1896606267
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_141: -333945192
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_142: 165211837
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_143: 910605919
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_144: 382613604
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_145: -1912113776
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_146: 164492461
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_147: 2144052968
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_148: 988149059
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_149: -1650724765
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_15: -1803243611
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_150: -406239116
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_151: 593937191
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_16: -1068227432
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_17: -684865844
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_18: -153162524
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_19: -1866895127
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_2: -2136159385
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_20: 988487963
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_21: 69149543
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_22: -1103235327
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_23: 216975052
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_24: 1784904028
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_25: 702271595
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_26: 777673122
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_27: 1268634463
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_28: -492457739
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_29: 1543708884
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_3: -612062430
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_30: 2011879911
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_31: -1207129120
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_32: -431752111
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_33: -2139061107
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_34: -1122143622
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_35: 1199073550
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_36: -227960083
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_37: 2125576188
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_38: -1797508842
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_39: 2015102015
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_4: -177835777
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_40: -1227993502
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_41: 1691478655
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_42: 54210546
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_43: -1503974535
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_44: -1676362721
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_45: -296920819
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_46: -1255999682
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_47: 319500336
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_48: -1093432877
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_49: 1250599736
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_5: 1662111776
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_50: -12526489
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_51: -861086159
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_52: 1375712278
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_53: 1647178521
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_54: 1001180752
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_55: 488734334
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_56: -1717206199
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_57: 1833935271
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_58: -2020815914
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_59: -439543411
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_6: -1372446304
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_60: -1805659070
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_61: 1029215501
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_62: 1049782792
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_63: 1195331122
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_64: 1645387661
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_65: 873610573
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_66: 937189845
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_67: -479468779
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_68: -1354030667
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_69: -1993599755
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_7: 127340493
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_70: 1162067110
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_71: -85821796
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_72: -85733774
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_73: 852867900
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_74: 1817883417
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_75: -763167720
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_76: 875410716
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_77: 2095627917
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_78: -1263845226
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_79: -1755809812
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_8: 494031833
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_80: 1807197010
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_81: 373951474
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_82: -1013190521
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_83: -1385733615
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_84: -1261566186
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_85: -1341118470
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_86: -317412705
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_87: -1935090297
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_88: 2082245355
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_89: 1115213208
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_9: -805613893
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_90: 1722415378
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_91: -1650055043
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_92: -1362426302
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_93: -988437180
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_94: 403271581
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_95: 2011768434
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_96: -948182167
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_97: -604624567
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_98: -1689264068
+      Game Boy Advance - X-Men_ Reign of Apocalypse - Playable Characters - Wolverine_99: -363606800
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

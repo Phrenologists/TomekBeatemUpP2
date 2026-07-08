@@ -31,6 +31,8 @@ MonoBehaviour:
   startupMovement: {x: 0, y: 0}
   activeMovement: {x: 6, y: 20}
   recoveryMovement: {x: 0, y: 0}
-  strikerSpawnOffset: {x: -20, y: 0}
-  strikerEntryStartOffset: {x: -6, y: 0}
+  strikerSpawnOffset: {x: 3, y: 0}
+  strikerEntryStartOffset: {x: 0, y: 0}
   strikerExitEndOffset: {x: 20, y: 0}
+  airStopMode: 0
+  airStopOnHitDuration: 0.15

@@ -29,3 +29,12 @@ MonoBehaviour:
   branchFollowUps:
   - inputAction: LeftTrigger
     followUp: {fileID: 11400000, guid: 0e13aa73f5df5f94782307a81ce938c4, type: 2}
+  energyCost: 0
+  startupMovement: {x: 0, y: 0}
+  activeMovement: {x: 1.5, y: 0}
+  recoveryMovement: {x: 0, y: 0}
+  strikerSpawnOffset: {x: 3, y: 0}
+  strikerEntryStartOffset: {x: 2, y: 0}
+  strikerExitEndOffset: {x: 2, y: 0}
+  airStopMode: 1
+  airStopOnHitDuration: 0.15

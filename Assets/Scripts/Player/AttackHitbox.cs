@@ -1,5 +1,4 @@
-﻿
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class AttackHitbox : MonoBehaviour
@@ -13,6 +12,8 @@ public class AttackHitbox : MonoBehaviour
 
     [Header("References")]
     public PlayerController owner;
+
+    public System.Action OnHitConnected;
 
     private PlayerEnergy _ownerEnergy;
 
@@ -66,6 +67,8 @@ public class AttackHitbox : MonoBehaviour
             enemy?.TakeDamage(damage, kb, causesKnockdown);
             _ownerEnergy?.OnHitLanded(energyGainOnHit);
             //Debug.Log("GottenHit");
+
+            OnHitConnected?.Invoke();
         }
         if(other.CompareTag("Player"))
         {

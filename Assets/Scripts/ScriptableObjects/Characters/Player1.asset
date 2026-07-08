@@ -16,9 +16,9 @@ MonoBehaviour:
   depthSpeed: 3.5
   acceleration: 20
   deceleration: 25
-  jumpForce: 12
-  jumpHoldGravity: 1.5
-  fallGravity: 3.5
+  jumpForce: 18
+  jumpHoldGravity: 3
+  fallGravity: 7
   maxFallSpeed: 20
   dashSpeed: 30
   dashDuration: 0.18

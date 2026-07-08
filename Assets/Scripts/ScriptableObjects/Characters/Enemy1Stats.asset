@@ -30,3 +30,4 @@ MonoBehaviour:
   knockdownDuration: 1.2
   getUpDuration: 0.6
   scoreValue: 100
+  juggleUplift: 6
