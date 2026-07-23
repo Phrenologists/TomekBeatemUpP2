@@ -297,11 +297,6 @@ public class PlayerAttackHandler : MonoBehaviour
         if (runtimeHitbox != null)
             runtimeHitbox.DeactivateHitbox();
     }
-
-    private void OnDrawGizmosSelected()
-    {
-        //Gizmos.DrawWireSphere(new Vector3(_currentAttack.hitboxOffset.x, _currentAttack.hitboxOffset.y), 0);
-    }
     
 
 #if UNITY_EDITOR
@@ -322,6 +317,40 @@ public class PlayerAttackHandler : MonoBehaviour
 
         GUI.Label(new Rect(10, 10, 400, 24), label);
         GUI.color = Color.white;
+    }
+    private void OnDrawGizmosSelected()
+    {
+        if (!_isActive || _currentAttack == null) return;
+
+        Color phaseColor = _phase switch
+        {
+            AttackPhase.Startup => new Color(1f, 0.8f, 0.1f, 0.9f),  // yellow
+            AttackPhase.Active => new Color(1f, 0.2f, 0.2f, 0.9f),  // red
+            AttackPhase.Recovery => new Color(0.3f, 0.7f, 1f, 0.9f),  // cyan
+            _ => Color.white
+        };
+
+        float sign = transform.localScale.x > 0 ? 1f : -1f;
+        Vector3 center = new Vector3(
+            transform.position.x + _currentAttack.hitboxOffset.x * sign,
+            transform.position.y + _currentAttack.hitboxOffset.y,
+            0f);
+        Vector3 size = new Vector3(
+            _currentAttack.hitboxSize.x,
+            _currentAttack.hitboxSize.y,
+            0.01f);
+
+        Gizmos.color = new Color(phaseColor.r, phaseColor.g, phaseColor.b, 0.25f);
+        Gizmos.DrawCube(center, size);
+
+        Gizmos.color = phaseColor;
+        Gizmos.DrawWireCube(center, size);
+
+        UnityEditor.Handles.color = phaseColor;
+        UnityEditor.Handles.Label(
+            center + Vector3.up * (_currentAttack.hitboxSize.y * 0.5f + 0.1f),
+            $"{_currentAttack.attackName}  [{_phase}]  {(_phaseTimer * _currentAttack.targetFPS):F0}f",
+            new GUIStyle { normal = { textColor = phaseColor }, fontSize = 10, fontStyle = FontStyle.Bold });
     }
 #endif
 }

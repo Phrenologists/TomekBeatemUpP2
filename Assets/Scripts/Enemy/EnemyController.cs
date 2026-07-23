@@ -395,6 +395,8 @@ public class EnemyController : MonoBehaviour, IDamageable
         if(hasBeenHit)
         {
             _velX = knockback.x;
+
+            Debug.Log(_velX);
             // _jumpVelocity = knockback.y;
             if (knockback.y > 0f)
             {

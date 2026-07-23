@@ -21,15 +21,20 @@ MonoBehaviour:
   hitboxSize: {x: 1, y: 1}
   damage: 15
   knockback: {x: 16, y: 9}
+  pullingKnockback: 0
   causesKnockdown: 1
   hitStopDuration: 0.05
   animTriggerName: LightPunchChain3
   activeLungeSpeed: 1.5
   fixedFollowUp: {fileID: 0}
-  branchFollowUps:
-  - inputAction: LightAttack
-    followUp: {fileID: 11400000, guid: 0996e47ea5c43e34797692f1df9756b8, type: 2}
+  branchFollowUps: []
   energyCost: 0
   startupMovement: {x: 0, y: 0}
   activeMovement: {x: 1.5, y: 0}
   recoveryMovement: {x: 0, y: 0}
+  strikerSpawnOffset: {x: 3, y: 0}
+  strikerEntryStartOffset: {x: 2, y: 0}
+  strikerExitEndOffset: {x: 2, y: 0}
+  airStopMode: 0
+  airStopOnHitDuration: 0.15
+  effects: []

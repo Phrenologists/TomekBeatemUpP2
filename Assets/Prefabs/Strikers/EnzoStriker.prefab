@@ -74,6 +74,7 @@ GameObject:
   - component: {fileID: 1482945957363683489}
   - component: {fileID: 625939046716869144}
   - component: {fileID: 1577335903984553504}
+  - component: {fileID: 4784315248701597898}
   m_Layer: 0
   m_Name: EnzoStriker
   m_TagString: Untagged
@@ -89,7 +90,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1354314389548021119}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.2349548, y: -0.20414174, z: 0.0061659645}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -129,6 +130,28 @@ MonoBehaviour:
   attachmentPoints:
   - pointName: Laser
     point: {fileID: 1230841478513454528}
+--- !u!114 &4784315248701597898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354314389548021119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23db459e09814994a88540506a2497a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mode: 0
+  previewAttack: {fileID: 11400000, guid: 8e7a251253d2f0c49bfc551124fc27c1, type: 2}
+  attackMap: {fileID: 0}
+  enemyRoster: {fileID: 0}
+  facingRight: 1
+  showLabels: 1
+  showOriginCrosshair: 1
+  showFill: 1
+  fillAlpha: 0.25
+  singleColor: {r: 1, g: 0.2, b: 0.2, a: 1}
 --- !u!1 &3415434585659805547
 GameObject:
   m_ObjectHideFlags: 0
@@ -179,6 +202,8 @@ MonoBehaviour:
   causesKnockdown: 0
   owner: {fileID: 0}
   energyGainOnHit: -1
+  belongsToPlayer: 1
+  isUnfriendly: 0
 --- !u!61 &4139948865011322088
 BoxCollider2D:
   m_ObjectHideFlags: 0

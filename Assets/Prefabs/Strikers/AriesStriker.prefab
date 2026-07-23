@@ -1,5 +1,68 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2759765927068612854
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 714534337300536948}
+  m_Layer: 0
+  m_Name: Thunderbolt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &714534337300536948
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2759765927068612854}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2716192645618244009}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5693623668030810792
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2716192645618244009}
+  m_Layer: 0
+  m_Name: EffectTransforms
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2716192645618244009
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5693623668030810792}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 714534337300536948}
+  m_Father: {fileID: 8537816320913783649}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6499543269802606142
 GameObject:
   m_ObjectHideFlags: 0
@@ -156,6 +219,8 @@ MonoBehaviour:
   causesKnockdown: 0
   owner: {fileID: 0}
   energyGainOnHit: -1
+  belongsToPlayer: 1
+  isUnfriendly: 0
 --- !u!61 &8877285590967007498
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -211,6 +276,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8537816320913783649}
   - component: {fileID: 2908819965372004012}
+  - component: {fileID: 2443380740984183047}
+  - component: {fileID: 4565952807118216455}
   m_Layer: 0
   m_Name: AriesStriker
   m_TagString: Untagged
@@ -226,13 +293,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9044936158965567902}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.495045, y: -0.51414174, z: 0.0061659645}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3420598580265800092}
   - {fileID: 3485948347646134402}
+  - {fileID: 2716192645618244009}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2908819965372004012
@@ -250,3 +318,40 @@ MonoBehaviour:
   spriteRenderer: {fileID: 6711089245937937672}
   animator: {fileID: 3190008013942584646}
   hitbox: {fileID: 2750391523911297727}
+--- !u!114 &2443380740984183047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9044936158965567902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e53655513aae5b4eab09321a4f87aa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attachmentPoints:
+  - pointName: Thunderbolt
+    point: {fileID: 714534337300536948}
+--- !u!114 &4565952807118216455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9044936158965567902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23db459e09814994a88540506a2497a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mode: 0
+  previewAttack: {fileID: 11400000, guid: aac8ce57874f27a4c9fa178a8ff65db7, type: 2}
+  attackMap: {fileID: 0}
+  enemyRoster: {fileID: 0}
+  facingRight: 1
+  showLabels: 1
+  showOriginCrosshair: 1
+  showFill: 1
+  fillAlpha: 0.25
+  singleColor: {r: 1, g: 0.2, b: 0.2, a: 1}

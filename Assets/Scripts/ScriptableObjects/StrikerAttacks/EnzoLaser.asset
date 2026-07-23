@@ -13,17 +13,18 @@ MonoBehaviour:
   m_Name: EnzoLaser
   m_EditorClassIdentifier: 
   attackName: New Attack
-  startupFrames: 5
-  activeFrames: 3
+  startupFrames: 22
+  activeFrames: 30
   recoveryFrames: 12
   targetFPS: 60
-  hitboxOffset: {x: 0.6, y: 0}
-  hitboxSize: {x: 0.8, y: 0.6}
+  hitboxOffset: {x: 2.15, y: -1}
+  hitboxSize: {x: 2, y: 2.1}
   damage: 15
-  knockback: {x: 3, y: 1.5}
+  knockback: {x: 3, y: 20}
+  pullingKnockback: 0
   causesKnockdown: 0
   hitStopDuration: 0.05
-  animTriggerName: 
+  animTriggerName: Laser
   activeLungeSpeed: 1.5
   fixedFollowUp: {fileID: 0}
   branchFollowUps: []
@@ -31,16 +32,16 @@ MonoBehaviour:
   startupMovement: {x: 0, y: 0}
   activeMovement: {x: 1.5, y: 0}
   recoveryMovement: {x: 0, y: 0}
-  strikerSpawnOffset: {x: 3, y: 0}
-  strikerEntryStartOffset: {x: 2, y: 0}
-  strikerExitEndOffset: {x: 2, y: 0}
+  strikerSpawnOffset: {x: 0, y: 2}
+  strikerEntryStartOffset: {x: 10, y: 5}
+  strikerExitEndOffset: {x: -30, y: 100}
   airStopMode: 0
   airStopOnHitDuration: 0.15
   effects:
   - effectData: {fileID: 11400000, guid: fb4de1daddc643f40b4b83618c635ff1, type: 2}
     triggerPhase: 1
     delayWithinPhase: 0
-    attachmentPointName: 
+    attachmentPointName: Laser
     localOffset: {x: 0, y: 0}
-    inheritFacing: 0
+    inheritFacing: 1
     cancelWithAttack: 0

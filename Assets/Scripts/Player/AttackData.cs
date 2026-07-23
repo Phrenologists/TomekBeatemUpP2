@@ -42,6 +42,8 @@ public class AttackData : ScriptableObject
 
     [Tooltip("Knockback applied in world space. X is flipped automatically when facing left.")]
     public Vector2 knockback = new Vector2(3f, 1.5f);
+    [Tooltip("Should knockback pull the enemy towards the player?")]
+    public bool pullingKnockback = false;
 
     public bool causesKnockdown = false;
 

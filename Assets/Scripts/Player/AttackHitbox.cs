@@ -24,6 +24,10 @@ public class AttackHitbox : MonoBehaviour
          "-1 = use PlayerEnergy.defaultEnergyPerHit.")]
     public float energyGainOnHit = -1f;
 
+    public bool belongsToPlayer;
+
+    public bool isUnfriendly;
+
     private void Awake()
     {
         if (owner != null)
@@ -62,7 +66,9 @@ public class AttackHitbox : MonoBehaviour
         // Tries to apply damage to the target
         if (other.CompareTag("Enemy"))
         {
+            if(!belongsToPlayer) return;
             //Debug.Log("Hit enemy");
+            Debug.Log("knockack when hit " + kb.x);
             var enemy = other.GetComponent<IDamageable>();
             enemy?.TakeDamage(damage, kb, causesKnockdown);
             _ownerEnergy?.OnHitLanded(energyGainOnHit);
@@ -72,6 +78,7 @@ public class AttackHitbox : MonoBehaviour
         }
         if(other.CompareTag("Player"))
         {
+            if (belongsToPlayer && !isUnfriendly) return;
             //Debug.Log("Hit player");
             var player = other.GetComponent<IDamageable>();
             PlayerController playerController = other.GetComponent<PlayerController>();

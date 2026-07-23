@@ -12,18 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faceb3a75409fc9488609c914997c5f2, type: 3}
   m_Name: AriesThunderbolt
   m_EditorClassIdentifier: 
-  attackName: New Attack
-  startupFrames: 5
-  activeFrames: 3
-  recoveryFrames: 12
+  attackName: Thunderbolt
+  startupFrames: 12
+  activeFrames: 40
+  recoveryFrames: 60
   targetFPS: 60
-  hitboxOffset: {x: 0.6, y: 0}
-  hitboxSize: {x: 0.8, y: 0.6}
+  hitboxOffset: {x: 5, y: 0}
+  hitboxSize: {x: 3, y: 4}
   damage: 15
-  knockback: {x: 3, y: 1.5}
+  knockback: {x: 15, y: 15}
+  pullingKnockback: 1
   causesKnockdown: 0
-  hitStopDuration: 0.05
-  animTriggerName: 
+  hitStopDuration: 0.15
+  animTriggerName: Thunderbolt
   activeLungeSpeed: 1.5
   fixedFollowUp: {fileID: 0}
   branchFollowUps: []
@@ -40,7 +41,7 @@ MonoBehaviour:
   - effectData: {fileID: 11400000, guid: 0c053d3256136c94f9b906d916dfd92d, type: 2}
     triggerPhase: 1
     delayWithinPhase: 0
-    attachmentPointName: 
-    localOffset: {x: 0, y: 0}
-    inheritFacing: 0
+    attachmentPointName: Thunderbolt
+    localOffset: {x: 0, y: 5}
+    inheritFacing: 1
     cancelWithAttack: 0

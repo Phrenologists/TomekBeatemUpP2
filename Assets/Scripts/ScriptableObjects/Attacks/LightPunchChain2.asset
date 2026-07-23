@@ -21,13 +21,14 @@ MonoBehaviour:
   hitboxSize: {x: 1, y: 1}
   damage: 15
   knockback: {x: 3, y: 0}
+  pullingKnockback: 0
   causesKnockdown: 0
   hitStopDuration: 0.05
   animTriggerName: LightPunchChain2
   activeLungeSpeed: 1.5
   fixedFollowUp: {fileID: 0}
   branchFollowUps:
-  - inputAction: LightAttack
+  - inputAction: HeavyAttack
     followUp: {fileID: 11400000, guid: 5c90670a769243344bd4228b3f6e5d55, type: 2}
   energyCost: 0
   startupMovement: {x: 0, y: 0}
@@ -38,3 +39,4 @@ MonoBehaviour:
   strikerExitEndOffset: {x: 2, y: 0}
   airStopMode: 0
   airStopOnHitDuration: 0.15
+  effects: []

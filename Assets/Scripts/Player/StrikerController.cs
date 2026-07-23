@@ -163,6 +163,7 @@ public class StrikerController : MonoBehaviour
 
             Vector2 kb = attack.knockback;
             kb.x = _facingSign * Mathf.Abs(kb.x);
+            if(attack.pullingKnockback) kb.x *= -1;
             hitbox.knockback = kb;
 
             Vector2 offset = attack.hitboxOffset;

@@ -1,0 +1,2952 @@
+fileFormatVersion: 2
+guid: 0c29a128b60b3e94daf78bb17daf4d1d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 685
+        width: 26
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f24828cb94514bb42a4f19b505c2862c
+      internalID: 1814930512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_1
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 685
+        width: 26
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d867bbfddfc767b448fcb32c39aebefc
+      internalID: 2005075027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_2
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 685
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99005e0890b0b2a4e81f749c05f4d896
+      internalID: -1662294406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_3
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 685
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7abc51def2f0c4e43b2ea993b340c54d
+      internalID: -1227673424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_4
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 685
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 201c3b875f4a53a448646a255d6331d8
+      internalID: -848512338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_5
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 685
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 318d4d96621f3624494c38544e2f1efe
+      internalID: -993612783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_6
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 685
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e7c6a823b83759448be5e1a330cb238
+      internalID: -1799755200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_7
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 685
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d57edb185f6481246bb5d5448779969d
+      internalID: 1503561626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_8
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 685
+        width: 26
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ebdd29dd49312640be61ab740868931
+      internalID: 939552953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_9
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 685
+        width: 25
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3533d4b2ac0d084fa65db9a68d705e7
+      internalID: 1207885145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_10
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 685
+        width: 25
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81a156dda8687d64da303855b0f6ab32
+      internalID: -1098660880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_11
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 685
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8002b5c18ae64334e9ab1209aa4d7c58
+      internalID: 627155564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_12
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 685
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61f0e453e0471214999577da3015b8ec
+      internalID: 2012937270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_13
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 685
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 735cd149f93b15b428dd5aee06b323c8
+      internalID: -2008798226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_14
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 622
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db58ccb20a201c94aa8c1c6566b4c929
+      internalID: -383031323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_15
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 622
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 107935f8a861846419f8aaf5e97ce26c
+      internalID: -188215716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_16
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 622
+        width: 23
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 597bad3cd1546ca45a181d24046a08bc
+      internalID: 1125179941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_17
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 622
+        width: 22
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90645636a358d9c47ba1913de6d0169b
+      internalID: -1159406262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_18
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 622
+        width: 22
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65d5ca8e34ca39e41857841a1bfb287e
+      internalID: -1122500951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_19
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 409
+        width: 61
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b7cc434ad466a743a011fa61132b828
+      internalID: -1379026495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_20
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 563
+        width: 29
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5744c7063033d32488c5fc6e2cc61bbc
+      internalID: 1336688792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_21
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 563
+        width: 26
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2d31272a328336419add50b8f2e061d
+      internalID: 686253688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_22
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 563
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4189e741b1b7f48409d70f5f1134cc9c
+      internalID: -301077706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_23
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 563
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad6c3af8176d0594f98d8b15db6fdb64
+      internalID: -1922457979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_24
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 563
+        width: 31
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e51ba3a2c06dc54ba9c80ec69bb34da
+      internalID: -39295052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_25
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 563
+        width: 29
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ef83ade92877264580ab35eefc504e5
+      internalID: 2100941750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_26
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 563
+        width: 28
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc9d5b20cf42b0444a32cd768c009b73
+      internalID: -267789319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_27
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 563
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56d1ad7d8918feb4f9bf22cd6d740b04
+      internalID: 119355748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_28
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 501
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dae512273dccfc45a7a30018cd1148c
+      internalID: -891613625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_29
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 501
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f457556229c72604bae71afb1d210d4e
+      internalID: -167776593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_30
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 501
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af58180698c91c1448e6970d784357fc
+      internalID: 1691069112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_31
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 501
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a12db231e1eab344b06d6911b20eb84
+      internalID: -1672857030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_32
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 501
+        width: 25
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f9f8b3312475284c832e4f5d3985050
+      internalID: 2054948538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_33
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 501
+        width: 25
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6484fc188067a074ab568e0b3ad11f31
+      internalID: -877825465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_34
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 501
+        width: 25
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44a0bfbc115a34d4d85427f7af2e23a7
+      internalID: -873509434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_35
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 501
+        width: 26
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e55d9d54fc2ee2b4bafff17a6183a3ba
+      internalID: -302259248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_36
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 501
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0aa344718ed37d4593fadc597c2b67e
+      internalID: -556779842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_37
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 501
+        width: 31
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9812d2d1893b92749923ee666388b194
+      internalID: 1956966374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_38
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 501
+        width: 31
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bab8f78ce459c9341a889a8de8e348ff
+      internalID: -969885230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_39
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 446
+        width: 27
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6903ebcee7f014543b24e2a9c40861ec
+      internalID: 762575739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_40
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 446
+        width: 29
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99570df569397ab46affb92e083bab79
+      internalID: -1716105123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_41
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 446
+        width: 28
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2851aa5a1540f144a83a70b7399870b
+      internalID: -1043292614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_42
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 446
+        width: 38
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f402ceb1277ff04b8052f3e39895832
+      internalID: 1533738061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_43
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 398
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90a63f4188832aa419741fff42b6f6db
+      internalID: -1381321332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_44
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 397
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a3a9c799b57d3b43b31b0a9bfd3a266
+      internalID: -624071762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_45
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 397
+        width: 34
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08918ed5ab4fb6d438d9610be639a878
+      internalID: -588423341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_46
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 397
+        width: 33
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1428129c5cd7aa74db57bc0efa4fbd66
+      internalID: 1797401854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_47
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 398
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09cd36f91ee7cd043a1ac8de9f2fbd56
+      internalID: -1964842817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_48
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 397
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe2bf4fcb00bc9342af2944243d98f11
+      internalID: 447371542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_49
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 397
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90f667e7ef2ba334a8b264e1adfa8470
+      internalID: -346889829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_50
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 397
+        width: 33
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fc0c3fc18a3cfe41a22a63acd8f0558
+      internalID: -92581075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_51
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 341
+        width: 37
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 895a663869fc0694088c35a28d970c93
+      internalID: 1519468550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_52
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 341
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d67b9ee70fb50744af07860395003cc
+      internalID: 1198266967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_53
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 341
+        width: 27
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 334a520a4c77c5747a13f24abca35e66
+      internalID: -1941574757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_54
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 341
+        width: 24
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e96d59a1038a894285707701dd10af5
+      internalID: -487435041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_55
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 341
+        width: 25
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22b3aaa3e3fef9b4b8cd847fbfc9aeb2
+      internalID: -694081208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_56
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 279
+        width: 23
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 827b52620f6a33549b9213013c5046d9
+      internalID: -790597394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_57
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 279
+        width: 24
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fffa00550de3a47459ec2d686f6372b4
+      internalID: -1587089444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_58
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 279
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c433c288a99c744a8dcea557ce739d0
+      internalID: -138447950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_59
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 279
+        width: 30
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bcf0edc7e689f943a38b87442a85c09
+      internalID: -1183840685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_60
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 279
+        width: 30
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4082148c17bc52a429e88d897ee52e86
+      internalID: 973701904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_61
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 279
+        width: 29
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26858ce10ed79464d975e0a2189e1764
+      internalID: 1962855298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_62
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 279
+        width: 29
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7616e368a0f87f4d8708f6d48b62d71
+      internalID: -762775058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_63
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 279
+        width: 29
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5966fa1f05d3e9c4dbd5610e143d2f3d
+      internalID: -1549108751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_64
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 279
+        width: 29
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70a97fdb5d7fbc343b1efa0b1c23374a
+      internalID: -508339712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_65
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 279
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34a36dd6c4be39d40bcab36f4f76b797
+      internalID: -1821946265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_66
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 282
+        width: 50
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad91a88f02ffc3448957f0badf25deda
+      internalID: 1189390615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_67
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 287
+        width: 52
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00977ca6d69f582418fa3be127d998ed
+      internalID: 1518082458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_68
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 322
+        width: 29
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3186afa91a2846f4fb5706ea55a11df8
+      internalID: 2012378936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_69
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 294
+        width: 34
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 073ad0b40feaa8c458fbaaacd6127f12
+      internalID: 1685672684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_70
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 223
+        width: 36
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cec403adb44fe6747864d7a68a98d886
+      internalID: -1009600908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_71
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 220
+        width: 40
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7adacc07dfaedec46aaea1e3aa101fff
+      internalID: 1873416802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_72
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 220
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81b9454b26971e044b0d11914f7bf34c
+      internalID: 222783770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_73
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 220
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 544d25a30af819b4e801244b36fc07a1
+      internalID: -428088284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_74
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 220
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08456f2863f9d044a9e339ac7049ca79
+      internalID: 56630099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_75
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 220
+        width: 28
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ea0e420fe0501145a1c46f2dd914da6
+      internalID: 1874174363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_76
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 220
+        width: 27
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88c2859974ffb634eb969c12d64484e9
+      internalID: -1338870828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_77
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 220
+        width: 24
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baeca7224aabc1745b68d9165d6430ba
+      internalID: -1825908441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_78
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 220
+        width: 25
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f45c5a3daf502e498ecf9a7c50121f8
+      internalID: -534225414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_79
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 220
+        width: 26
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b408b876c27c6fe48b5d7b52a6587380
+      internalID: -109213735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_80
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 208
+        width: 21
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93697c554644973468617fb978beef4c
+      internalID: 383050120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_81
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 169
+        width: 36
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5f675a79ea3e814aa5db49c33570db7
+      internalID: 933470199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_82
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 175
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8c3d1de8c60cd14e92cb92bef195d1a
+      internalID: 979241426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_83
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 168
+        width: 77
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dd074c1227fb984bb6bcd9b2d4ced6e
+      internalID: 1664663780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_84
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 165
+        width: 78
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a23b1c138bcc2ef489861f3133023d67
+      internalID: -1873386255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_85
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 165
+        width: 79
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bba10315703b8b441b3a4ac29fb24176
+      internalID: -1808241300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_86
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 165
+        width: 64
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed5026e1907850a41acb7e9bf719057e
+      internalID: -287190587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_87
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 185
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e03072b2455830f4286fc7296b704da1
+      internalID: 67941934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_88
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 165
+        width: 66
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43a3723181e1162478ddd37cab7e0864
+      internalID: 366025909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_89
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 165
+        width: 63
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 307a70066221c454f9b7fa5ec3a93c64
+      internalID: -780165546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_90
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 165
+        width: 63
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95506f753c8aca7499280bf5874f5dca
+      internalID: 786478675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_91
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 165
+        width: 63
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fdb43fbcbde19943aae43b0fffbaa03
+      internalID: 102854839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_92
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 165
+        width: 61
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e0bd9bb3d48887409b63cf299d4fe81
+      internalID: -1795150164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_93
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 165
+        width: 60
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d55ffa25ea0ec21449a8eaeb43e73118
+      internalID: 2013568775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_94
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 165
+        width: 60
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4d8aad18e7c9704dbc6b62c6b7ab2c1
+      internalID: -1868750024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_95
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 165
+        width: 60
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78bc9465e1e356747970e8052240bc8a
+      internalID: -774577476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_96
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 161
+        width: 60
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b4d4c5f00db49f49b657e47f30f136a
+      internalID: -470615744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_97
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 156
+        width: 21
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 639ffc58078998a4d9223f5926c77ed2
+      internalID: 1725102349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_98
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 174
+        width: 19
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a52fd4ec26d45f44931087c65afa989
+      internalID: 636476244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_99
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 100
+        width: 54
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d31c3f51be673cc4996a50e534f8623a
+      internalID: 482872564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_100
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 32
+        width: 62
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed6a6525ea8ebd34ea6d0a61b222be6c
+      internalID: -821383419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_101
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 100
+        width: 25
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f7e9f558a1a3e94c8ee5c977970d375
+      internalID: -1475894568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_102
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 100
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b56c9b398246b241bda85defce608ce
+      internalID: 809136798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_103
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 100
+        width: 29
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2ef73d2e4b05ab428ea8ac751988076
+      internalID: 1963307111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_104
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 100
+        width: 29
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 796533babf6a9c843bdd3d1970f5a594
+      internalID: 1681205312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_105
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 100
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 001563314ae65dd4ab4d02e0159cd57c
+      internalID: -1036503225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_106
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 100
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c90f001ad5cda84ba59cb0b3e715d57
+      internalID: -1901976902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_107
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 100
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a07042dca842d843a2415642eeaf214
+      internalID: -1339748534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_108
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 100
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8869317ade080448bf286cff50ef2d6
+      internalID: 1642094588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_109
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 100
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13f14f90ece70ec4591e33c814d5546d
+      internalID: 272704219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_110
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 100
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90f7b6cc6b1882d4e8c8c0219943d27f
+      internalID: 787746380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_111
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 100
+        width: 31
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd574e69acb9d4c40b3b59e3b59db6b3
+      internalID: 713569888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_112
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 100
+        width: 26
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4ddfa5879ec9524d9201a90194bf63e
+      internalID: -1884327122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_113
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 100
+        width: 26
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1337868bebfcb1d4db9594480d9bc1bd
+      internalID: -1072719550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_114
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 100
+        width: 26
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 347583047bd42e94298ceb712e0ee146
+      internalID: -1352203144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_115
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 32
+        width: 26
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93041e00ebceab84785d21da6ee43401
+      internalID: 2094846430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_116
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 45
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cc9a0ff5de69004faf5fb1f04fbd71d
+      internalID: 1241724997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_117
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 46
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25837b6260208fd4084d489a1c5bc476
+      internalID: 1985660237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_118
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 59
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62d8131fbd9cb9745ad8a8a4557606af
+      internalID: 600731089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_119
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 47
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 230f5aa2240c2b44ea96f52858a117c9
+      internalID: 470853451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_120
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 55
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bdefe29e6b407848b036445e70618b0
+      internalID: 1744986050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_121
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 48
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d0fca4caafa19941820f90efb18cca3
+      internalID: -416480280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_122
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 41
+        width: 16
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20e1b4937a02e734bbbfc208236eb7be
+      internalID: 1589489160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_123
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 39
+        width: 10
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0577e2fe896b2643b09772d9adbd3bf
+      internalID: -1471156662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_124
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 40
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b375f968b5e1800429bef3b4fd3d1ec5
+      internalID: -919391407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_125
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 37
+        width: 11
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f396b4bdeeac8d248be3aaae925ddf46
+      internalID: 1388451620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_126
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 32
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e230e2d6a3e5bc46bfd98b7f7011d72
+      internalID: -777784537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_127
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 32
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ba07f29f98b95443abc44c908629e05
+      internalID: 839796022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_128
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 32
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e9129fb20f47fb419a98c467ed91245
+      internalID: -486289673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_0: 1814930512
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_1: 2005075027
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_10: -1098660880
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_100: -821383419
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_101: -1475894568
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_102: 809136798
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_103: 1963307111
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_104: 1681205312
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_105: -1036503225
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_106: -1901976902
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_107: -1339748534
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_108: 1642094588
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_109: 272704219
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_11: 627155564
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_110: 787746380
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_111: 713569888
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_112: -1884327122
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_113: -1072719550
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_114: -1352203144
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_115: 2094846430
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_116: 1241724997
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_117: 1985660237
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_118: 600731089
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_119: 470853451
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_12: 2012937270
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_120: 1744986050
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_121: -416480280
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_122: 1589489160
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_123: -1471156662
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_124: -919391407
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_125: 1388451620
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_126: -777784537
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_127: 839796022
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_128: -486289673
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_13: -2008798226
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_14: -383031323
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_15: -188215716
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_16: 1125179941
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_17: -1159406262
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_18: -1122500951
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_19: -1379026495
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_2: -1662294406
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_20: 1336688792
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_21: 686253688
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_22: -301077706
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_23: -1922457979
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_24: -39295052
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_25: 2100941750
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_26: -267789319
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_27: 119355748
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_28: -891613625
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_29: -167776593
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_3: -1227673424
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_30: 1691069112
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_31: -1672857030
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_32: 2054948538
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_33: -877825465
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_34: -873509434
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_35: -302259248
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_36: -556779842
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_37: 1956966374
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_38: -969885230
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_39: 762575739
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_4: -848512338
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_40: -1716105123
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_41: -1043292614
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_42: 1533738061
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_43: -1381321332
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_44: -624071762
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_45: -588423341
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_46: 1797401854
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_47: -1964842817
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_48: 447371542
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_49: -346889829
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_5: -993612783
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_50: -92581075
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_51: 1519468550
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_52: 1198266967
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_53: -1941574757
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_54: -487435041
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_55: -694081208
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_56: -790597394
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_57: -1587089444
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_58: -138447950
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_59: -1183840685
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_6: -1799755200
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_60: 973701904
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_61: 1962855298
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_62: -762775058
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_63: -1549108751
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_64: -508339712
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_65: -1821946265
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_66: 1189390615
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_67: 1518082458
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_68: 2012378936
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_69: 1685672684
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_7: 1503561626
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_70: -1009600908
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_71: 1873416802
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_72: 222783770
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_73: -428088284
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_74: 56630099
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_75: 1874174363
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_76: -1338870828
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_77: -1825908441
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_78: -534225414
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_79: -109213735
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_8: 939552953
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_80: 383050120
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_81: 933470199
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_82: 979241426
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_83: 1664663780
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_84: -1873386255
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_85: -1808241300
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_86: -287190587
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_87: 67941934
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_88: 366025909
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_89: -780165546
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_9: 1207885145
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_90: 786478675
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_91: 102854839
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_92: -1795150164
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_93: 2013568775
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_94: -1868750024
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_95: -774577476
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_96: -470615744
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_97: 1725102349
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_98: 636476244
+      PC _ Computer - Katana ZERO - Non-Playable Characters - SNOW_99: 482872564
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
