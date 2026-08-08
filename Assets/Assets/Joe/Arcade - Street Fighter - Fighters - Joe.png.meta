@@ -1,0 +1,1214 @@
+fileFormatVersion: 2
+guid: 97927122c7319a34e946cc233fb77e3c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Arcade - Street Fighter - Fighters - Joe_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 454.4
+        width: 53.6
+        height: 113.6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d32a9431798548b42bd6699408e0138b
+      internalID: -1953673036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Street Fighter - Fighters - Joe_1
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 454
+        width: 57
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aaa3d159220cbc4d8663f632a22db5c
+      internalID: 2078388185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Street Fighter - Fighters - Joe_2
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 460
+        width: 49
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d944f9a7715a71478b80ef5db2d85cb
+      internalID: 509887643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Street Fighter - Fighters - Joe_3
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 460
+        width: 51
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae052d1b57d6fef46a1904755b8cea08
+      internalID: 1393411612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Street Fighter - Fighters - Joe_4
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 468
+        width: 9
+        height: 6
+      alignment: 9
+      pivot: {x: 0.45342, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf626e521d241ea43a0e74245019d069
+      internalID: 1588715444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Street Fighter - Fighters - Joe_5
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 454
+        width: 60
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d55644449d774c4d8b459eb7f63e794
+      internalID: 1867408949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Street Fighter - Fighters - Joe_6
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 454
+        width: 52
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cbcfa47ccfbd764bb48ad84b9b8de62
+      internalID: -326837536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Street Fighter - Fighters - Joe_7
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 454
+        width: 54
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aef1e2e9c9df4b4d93b995d3f9a74f1
+      internalID: -1696800424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Street Fighter - Fighters - Joe_8
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 454
+        width: 63
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca56a19451a19014ebcde35bd7bd87ed
+      internalID: 2122286930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Street Fighter - Fighters - Joe_9
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 454.4
+        width: 53.6
+        height: 113.6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a436aec5529ca594e9251463196ee429
+      internalID: -830712464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Street Fighter - Fighters - Joe_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 341
+        width: 70
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 648c2f734f34fe04c8e5e1d11f7732df
+      internalID: -1661447337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Street Fighter - Fighters - Joe_11
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 341.4
+        width: 53.6
+        height: 113.6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bd24ecc0ec73f543bb5ff1afbf1e62a
+      internalID: -50753559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Street Fighter - Fighters - Joe_12
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 341.4
+        width: 53.6
+        height: 113.6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdbcdba65fce21745aa2f45e215a4471
+      internalID: 1561002377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Street Fighter - Fighters - Joe_13
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 341.4
+        width: 53.6
+        height: 113.6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86a1cb938b324004e82d5dff2a2c29ca
+      internalID: 1940440580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Street Fighter - Fighters - Joe_14
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 341.4
+        width: 53.6
+        height: 113.6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63abe8738f677d14f9ba74b44c79ef9f
+      internalID: 350631321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Street Fighter - Fighters - Joe_15
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 341.4
+        width: 53.6
+        height: 113.6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28488544688fb3d48b68c0f9bf6e5d3a
+      internalID: -1533948865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Street Fighter - Fighters - Joe_16
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 341.4
+        width: 53.6
+        height: 113.6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e9e721557888cb4c8068da8f9c5a936
+      internalID: -353739503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Street Fighter - Fighters - Joe_17
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 341.4
+        width: 53.6
+        height: 113.6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 421a3655be309ea469f0e064f098de74
+      internalID: 972601710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Street Fighter - Fighters - Joe_18
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 341.4
+        width: 53.6
+        height: 113.6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 029e23bff2bfb864eaa6de7978f93a9c
+      internalID: 352537230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Street Fighter - Fighters - Joe_19
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 341.4
+        width: 53.6
+        height: 113.6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a6b5e253fab0fd4aa0728ab86a6862a
+      internalID: -1142528775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Street Fighter - Fighters - Joe_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 228.4
+        width: 53.6
+        height: 113.6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6936446cc1a9b0d49a95e7574b00fac4
+      internalID: -1595386205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Street Fighter - Fighters - Joe_21
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 228.4
+        width: 53.6
+        height: 113.6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7a5fb98cb45e2345990822345cb58cc
+      internalID: -1967426891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Street Fighter - Fighters - Joe_22
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 228.4
+        width: 53.6
+        height: 113.6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4951a847d3ec551458de1bd2ba8979cd
+      internalID: -1011979445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Street Fighter - Fighters - Joe_23
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 228.4
+        width: 53.6
+        height: 113.6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 553302ce8b18e3945870e3254bd7e656
+      internalID: 1528510372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Street Fighter - Fighters - Joe_24
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 136
+        width: 54
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d51cbe98dee890c4e82d52e167b2a12b
+      internalID: 1449463988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Street Fighter - Fighters - Joe_25
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 144
+        width: 54
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a5954f55c0c8ad499cbbb7f677f3737
+      internalID: 1229561219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Street Fighter - Fighters - Joe_26
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 252
+        width: 75
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ea1d0317bf8ece47b46d101fa1bc456
+      internalID: -299641650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Street Fighter - Fighters - Joe_27
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 235
+        width: 85
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25ef152ca27bc534898ecc078a122c66
+      internalID: 1447912464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Street Fighter - Fighters - Joe_28
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 254
+        width: 88
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c84a79cf7f985549a96a4597a8f90c6
+      internalID: 1529616420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Street Fighter - Fighters - Joe_29
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 144
+        width: 54
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6b3eda2be5de3047b1a22fbe35574a5
+      internalID: -1606905831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Street Fighter - Fighters - Joe_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 115.4
+        width: 53.6
+        height: 113.6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbbe0059f8b6db34ba9bfc7da30d6f64
+      internalID: 1449339621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Street Fighter - Fighters - Joe_31
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 115.4
+        width: 53.6
+        height: 113.6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d55d22afd2562004aaa0a755a5712d64
+      internalID: 2011399564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Street Fighter - Fighters - Joe_32
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 115.4
+        width: 53.6
+        height: 113.6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dbd16dd2d6a8f944bf79c3e8f095e9e
+      internalID: -374989978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Street Fighter - Fighters - Joe_33
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 115.4
+        width: 53.6
+        height: 113.6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75d4c02958aac73458a6cf561bc3d33b
+      internalID: -808954170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Street Fighter - Fighters - Joe_34
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 115.4
+        width: 53.6
+        height: 113.6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3111365e183f03a48907a32a4a8ae5c6
+      internalID: 116151818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Street Fighter - Fighters - Joe_35
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 115.4
+        width: 53.6
+        height: 113.6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c41692c721cdd454cb8b52b025d9d5e2
+      internalID: -1364955376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Street Fighter - Fighters - Joe_36
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 115.4
+        width: 53.6
+        height: 113.6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62c3e6f460b155b4fb9145dcda1ae14b
+      internalID: 810564646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Street Fighter - Fighters - Joe_37
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 115.4
+        width: 53.6
+        height: 113.6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e21a5f6cf9ed034d8ec6dc23d5f00cb
+      internalID: 1049088808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Street Fighter - Fighters - Joe_38
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 115.4
+        width: 53.6
+        height: 113.6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be3d4125bf4ed1d4586cb8a8a64a9c3e
+      internalID: -364401689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Street Fighter - Fighters - Joe_39
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 115.4
+        width: 53.6
+        height: 113.6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6f5375384022aa4180efbff89dc6528
+      internalID: 1230221070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Street Fighter - Fighters - Joe_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2.4000015
+        width: 53.6
+        height: 113.6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab368ce7ce7f8964286cf03709ccec3e
+      internalID: 1776418596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Street Fighter - Fighters - Joe_41
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 2.4000015
+        width: 53.6
+        height: 113.6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48e3840521f8fef4ca844535c02b9b19
+      internalID: 1765876950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Street Fighter - Fighters - Joe_42
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 2.4000015
+        width: 53.6
+        height: 113.6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41fbe9a8153d18c4db31b8f2c6fae84e
+      internalID: 862282000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Street Fighter - Fighters - Joe_43
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 2.4000015
+        width: 53.6
+        height: 113.6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf79a33ec7848b24dbfc69ee67a89f4c
+      internalID: -529030369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Street Fighter - Fighters - Joe_44
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 2.4000015
+        width: 53.6
+        height: 113.6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 360d49b110555214594739832b09917e
+      internalID: 1395466413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Street Fighter - Fighters - Joe_45
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 2.4000015
+        width: 53.6
+        height: 113.6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6040c80b353b7584682f3fb7acb94fb2
+      internalID: 1416793913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Street Fighter - Fighters - Joe_46
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 2.4000015
+        width: 53.6
+        height: 113.6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06ca98edf5d72bd43bb23aee953223eb
+      internalID: 177994713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Street Fighter - Fighters - Joe_47
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 2.4000015
+        width: 53.6
+        height: 113.6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f8b9acc0d0abd04e836ff4273ee6ceb
+      internalID: -759431060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Street Fighter - Fighters - Joe_48
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 2.4000015
+        width: 53.6
+        height: 113.6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ec749375f134af489e8a7fae94eb7ef
+      internalID: -275893306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Street Fighter - Fighters - Joe_49
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 2.4000015
+        width: 53.6
+        height: 113.6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bc2aa46bd7c03a4eaac7f2482ac471a
+      internalID: -1704970418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Arcade - Street Fighter - Fighters - Joe_0: -1953673036
+      Arcade - Street Fighter - Fighters - Joe_1: 2078388185
+      Arcade - Street Fighter - Fighters - Joe_10: -1661447337
+      Arcade - Street Fighter - Fighters - Joe_11: -50753559
+      Arcade - Street Fighter - Fighters - Joe_12: 1561002377
+      Arcade - Street Fighter - Fighters - Joe_13: 1940440580
+      Arcade - Street Fighter - Fighters - Joe_14: 350631321
+      Arcade - Street Fighter - Fighters - Joe_15: -1533948865
+      Arcade - Street Fighter - Fighters - Joe_16: -353739503
+      Arcade - Street Fighter - Fighters - Joe_17: 972601710
+      Arcade - Street Fighter - Fighters - Joe_18: 352537230
+      Arcade - Street Fighter - Fighters - Joe_19: -1142528775
+      Arcade - Street Fighter - Fighters - Joe_2: 509887643
+      Arcade - Street Fighter - Fighters - Joe_20: -1595386205
+      Arcade - Street Fighter - Fighters - Joe_21: -1967426891
+      Arcade - Street Fighter - Fighters - Joe_22: -1011979445
+      Arcade - Street Fighter - Fighters - Joe_23: 1528510372
+      Arcade - Street Fighter - Fighters - Joe_24: 1449463988
+      Arcade - Street Fighter - Fighters - Joe_25: 1229561219
+      Arcade - Street Fighter - Fighters - Joe_26: -299641650
+      Arcade - Street Fighter - Fighters - Joe_27: 1447912464
+      Arcade - Street Fighter - Fighters - Joe_28: 1529616420
+      Arcade - Street Fighter - Fighters - Joe_29: -1606905831
+      Arcade - Street Fighter - Fighters - Joe_3: 1393411612
+      Arcade - Street Fighter - Fighters - Joe_30: 1449339621
+      Arcade - Street Fighter - Fighters - Joe_31: 2011399564
+      Arcade - Street Fighter - Fighters - Joe_32: -374989978
+      Arcade - Street Fighter - Fighters - Joe_33: -808954170
+      Arcade - Street Fighter - Fighters - Joe_34: 116151818
+      Arcade - Street Fighter - Fighters - Joe_35: -1364955376
+      Arcade - Street Fighter - Fighters - Joe_36: 810564646
+      Arcade - Street Fighter - Fighters - Joe_37: 1049088808
+      Arcade - Street Fighter - Fighters - Joe_38: -364401689
+      Arcade - Street Fighter - Fighters - Joe_39: 1230221070
+      Arcade - Street Fighter - Fighters - Joe_4: 1588715444
+      Arcade - Street Fighter - Fighters - Joe_40: 1776418596
+      Arcade - Street Fighter - Fighters - Joe_41: 1765876950
+      Arcade - Street Fighter - Fighters - Joe_42: 862282000
+      Arcade - Street Fighter - Fighters - Joe_43: -529030369
+      Arcade - Street Fighter - Fighters - Joe_44: 1395466413
+      Arcade - Street Fighter - Fighters - Joe_45: 1416793913
+      Arcade - Street Fighter - Fighters - Joe_46: 177994713
+      Arcade - Street Fighter - Fighters - Joe_47: -759431060
+      Arcade - Street Fighter - Fighters - Joe_48: -275893306
+      Arcade - Street Fighter - Fighters - Joe_49: -1704970418
+      Arcade - Street Fighter - Fighters - Joe_5: 1867408949
+      Arcade - Street Fighter - Fighters - Joe_6: -326837536
+      Arcade - Street Fighter - Fighters - Joe_7: -1696800424
+      Arcade - Street Fighter - Fighters - Joe_8: 2122286930
+      Arcade - Street Fighter - Fighters - Joe_9: -830712464
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

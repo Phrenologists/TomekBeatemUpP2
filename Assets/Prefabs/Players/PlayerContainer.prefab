@@ -421,7 +421,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slots:
-  - {fileID: 11400000, guid: afb79f7c666e01f4bb170f4387963932, type: 2}
+  - {fileID: 11400000, guid: 6f0a89487c16e8a46ab5ba1e2204226a, type: 2}
   - {fileID: 11400000, guid: 6f0a89487c16e8a46ab5ba1e2204226a, type: 2}
   - {fileID: 11400000, guid: 5b2d722d33a62ae4eba7e89523333d10, type: 2}
   - {fileID: 11400000, guid: fafa51102de473c419d10ffa78019996, type: 2}
@@ -521,7 +521,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2, y: 2.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -613,6 +613,7 @@ MonoBehaviour:
   owner: {fileID: 3398795183118298036}
   energyGainOnHit: -1
   belongsToPlayer: 1
+  isUnfriendly: 0
 --- !u!61 &7505457937010731268
 BoxCollider2D:
   m_ObjectHideFlags: 0

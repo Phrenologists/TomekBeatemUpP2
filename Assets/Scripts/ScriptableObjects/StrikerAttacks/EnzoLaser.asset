@@ -32,7 +32,7 @@ MonoBehaviour:
   startupMovement: {x: 0, y: 0}
   activeMovement: {x: 1.5, y: 0}
   recoveryMovement: {x: 0, y: 0}
-  strikerSpawnOffset: {x: 0, y: 2}
+  strikerSpawnOffset: {x: 7, y: 2}
   strikerEntryStartOffset: {x: 10, y: 5}
   strikerExitEndOffset: {x: -30, y: 100}
   airStopMode: 0

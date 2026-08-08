@@ -18,9 +18,9 @@ MonoBehaviour:
   entryDuration: 0.15
   preAttackDelay: 0.05
   exitDuration: 0.2
-  cooldown: 8
-  lbAttack: {fileID: 0}
-  rbAttack: {fileID: 0}
+  cooldown: 0
+  lbAttack: {fileID: 11400000, guid: 2442b6e7a8a36464eab443196d7e7e22, type: 2}
+  rbAttack: {fileID: 11400000, guid: 2c4530cded6dead41bd8ae1fd9538ca2, type: 2}
   faceLeft: 1
   entryEase: 6
   exitEase: 5
