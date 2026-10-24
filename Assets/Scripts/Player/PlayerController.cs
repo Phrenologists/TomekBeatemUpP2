@@ -12,7 +12,7 @@
 
 using System.Collections;
 using UnityEngine;
-using static UnityEditor.Rendering.CameraUI;
+//using static UnityEditor.Rendering.CameraUI;
 
 [RequireComponent(typeof(PlayerInputHandler))]
 [RequireComponent(typeof(PlayerAttackHandler))]
@@ -29,6 +29,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float groundYMin = -3f;
     [Tooltip("Bottom of the walkable lane (largest Y value).")]
     [SerializeField] private float groundYMax = 3f;
+    [Header("Camera Bounds")]
+    [SerializeField] private float playerHalfWidth = 0.3f;
 
 
     private static readonly int AnimStateID = Animator.StringToHash("stateID");
@@ -86,6 +88,8 @@ public class PlayerController : MonoBehaviour
     
     private bool _isInvincible;
 
+    private bool _touchedAWall;
+
     
 
     private void Awake()
@@ -132,23 +136,59 @@ public class PlayerController : MonoBehaviour
             _jumpVelocity = 0f;
         }
 
-        _groundY = Mathf.Clamp(_groundY, groundYMin, groundYMax);
+       
 
+        if (BeatEmUpCamera.Instance != null)
+        {
+            float minX = BeatEmUpCamera.Instance.WorldLeftEdge + playerHalfWidth;
+            float maxX = BeatEmUpCamera.Instance.WorldRightEdge - playerHalfWidth;
+
+            if (_velX < 0f && transform.position.x <= minX + 0.001f) _velX = 0f;
+            if (_velX > 0f && transform.position.x >= maxX - 0.001f) _velX = 0f;
+            LevelBoundary.BlockVelocity(transform.position.x, _groundY, ref _velX, ref _velDepth, halfWidth: playerHalfWidth);
+
+
+            //pos.x = Mathf.Clamp(pos.x, minX, maxX);
+
+            //if ((pos.x <= minX && _velX < 0f) || (pos.x >= maxX && _velX > 0f)
+                //_rb.position = new Vector2(maxX, pos.y);
+                //_rb.velocity = Vector2.zero;
+                //_velX = 0f; 
+            
+            //LevelBoundary.ApplyAll(ref pos.x, ref _groundY,ref _velX, halfWidth: playerHalfWidth);
+        }
         Vector3 pos = transform.position;
         pos.x += _velX * Time.deltaTime;
         pos.y = _groundY + _jumpHeight;
-        transform.position = pos;
 
+        if (BeatEmUpCamera.Instance != null)
+        {
+            float minX = BeatEmUpCamera.Instance.WorldLeftEdge + playerHalfWidth;
+            float maxX = BeatEmUpCamera.Instance.WorldRightEdge - playerHalfWidth;
+            pos.x = Mathf.Clamp(pos.x, minX, maxX);
+            if ((pos.x <= minX && _velX < 0f) || (pos.x >= maxX && _velX > 0f))
+                _velX = 0f;
+        }
+
+        LevelBoundary.ApplyAll(ref pos.x, ref _groundY, ref _velX,
+                               halfWidth: playerHalfWidth);
+
+        _groundY = Mathf.Clamp(_groundY, groundYMin, groundYMax);
+        pos.y = _groundY + _jumpHeight;
+
+        transform.position = pos;
         _rb.position = new Vector2(pos.x, pos.y);
 
         if (spriteRenderer != null)
             spriteRenderer.sortingOrder = Mathf.RoundToInt(-_groundY * 10f);
 
-        
+
+
         UpdateAnimator();
 
-        
+
         _input.ConsumeFrameInputs();
+
     }
 
     

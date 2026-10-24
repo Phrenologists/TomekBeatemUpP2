@@ -366,6 +366,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 2558068689804707921}
   groundYMin: -3
   groundYMax: 3
+  playerHalfWidth: 1
 --- !u!114 &7341344086137663664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -613,6 +614,7 @@ MonoBehaviour:
   owner: {fileID: 3398795183118298036}
   energyGainOnHit: -1
   belongsToPlayer: 1
+  isUnfriendly: 0
 --- !u!61 &7505457937010731268
 BoxCollider2D:
   m_ObjectHideFlags: 0
