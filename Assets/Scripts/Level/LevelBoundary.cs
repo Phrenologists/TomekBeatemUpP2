@@ -79,13 +79,7 @@ public class LevelBoundary : MonoBehaviour
         }
     }
 
-    public static void BlockVelocity(
-    float currentX,
-    float currentGroundY,
-    ref float velX,
-    ref float velDepth,
-    float halfWidth = 0.3f,
-    float halfDepth = 0f)
+    public static void BlockVelocity(float currentX, float currentGroundY, ref float velX, ref float velDepth, float halfWidth = 0.3f, float halfDepth = 0f)
     {
         foreach (var b in All)
         {
