@@ -2562,6 +2562,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 865663200}
+  - component: {fileID: 865663201}
   m_Layer: 5
   m_Name: GUI Manager
   m_TagString: Untagged
@@ -2588,6 +2589,38 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &865663201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865663199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b6ddfa8d34dda04ba3a68bf5919f986, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  battleUI: {fileID: 802620071}
+  pauseButton: {fileID: 870999907}
+  progressSlider: {fileID: 709899228}
+  progressValue: {fileID: 1791772566}
+  playerIcon: {fileID: 645590745}
+  teammates:
+  - energySliderTeam: {fileID: 1387409421}
+    iconTeam: {fileID: 1413689648}
+  - energySliderTeam: {fileID: 246895299}
+    iconTeam: {fileID: 1513061757}
+  - energySliderTeam: {fileID: 92408777}
+    iconTeam: {fileID: 1615013876}
+  - energySliderTeam: {fileID: 902539962}
+    iconTeam: {fileID: 1934107438}
+  healthValue: {fileID: 1064379924}
+  maxHealthValue: {fileID: 1558726073}
+  healthBar: {fileID: 1582189801}
+  energyValue: {fileID: 2055142152}
+  maxEnergyValue: {fileID: 578052033}
+  energyBar: {fileID: 1880069677}
 --- !u!1 &870999905
 GameObject:
   m_ObjectHideFlags: 0
