@@ -8,7 +8,6 @@ public class UIManager : MonoBehaviour
 {
     [Header("Battle UI")]
     [SerializeField] private GameObject battleUI;
-    [SerializeField] private Button pauseButton;
     [Header("Progress")]
     [SerializeField] private Slider progressSlider;
     [SerializeField] private TMP_Text progressValue;
@@ -30,7 +29,7 @@ public class UIManager : MonoBehaviour
     //Methods for modifying values of UI elements
     public void SetPlayerIcon (Sprite icon)
     {
-        playerIcon.sprite = icon;
+        if (icon != null) playerIcon.sprite = icon;
     }
     public void SetMaxHealth(float max)
     {
@@ -39,18 +38,35 @@ public class UIManager : MonoBehaviour
     }
     public void SetCurrentHealth(float health)
     {
-        healthValue.text = health.ToString();
-        healthBar.value = health;
+        if (health <= healthBar.maxValue)
+        {
+            healthValue.text = health.ToString();
+            healthBar.value = health;
+        }
+        else
+        {
+            healthValue.text = healthBar.maxValue.ToString();
+            healthBar.value = healthBar.maxValue;
+        }
     }
     public void SetMaxEnergy(float max)
     {
         maxEnergyValue.text = max.ToString();
         energyBar.maxValue = max;
     }
-    public void SetEnergyHealth(float energy)
+    public void SetCurrentEnergy(float energy)
     {
-        energyValue.text = energy.ToString();
-        energyBar.value = energy;
+        if (energy <= energyBar.maxValue)
+        {
+            energyValue.text = energy.ToString();
+            energyBar.value = energy;
+        }
+        else
+        {
+            energyValue.text = energyBar.maxValue.ToString();
+            energyBar.value = energyBar.maxValue;
+        }
+        
     }
 }
 
@@ -66,10 +82,12 @@ public class TeammateUI
     }
     public void SetCurrentEnergy(float energy)
     {
-        energySliderTeam.value = energy;
+        if (energy <= energySliderTeam.maxValue)
+            energySliderTeam.value = energy;
+        else energySliderTeam.value = energySliderTeam.maxValue;
     }
     public void SetTeammateIcon(Sprite icon)
     {
-        iconTeam.sprite = icon;
+        if (icon != null) iconTeam.sprite = icon;
     }
 }
