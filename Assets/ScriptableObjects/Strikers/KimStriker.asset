@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a862f64ffc3f2f241bbd5a7d0dd7ae12, type: 3}
-  m_Name: AriesStriker
+  m_Name: KimStriker
   m_EditorClassIdentifier: 
   strikerName: Striker
-  portrait: {fileID: 0}
-  prefab: {fileID: 9044936158965567902, guid: 00c5631b26b0e474b83ebcccdbd7c25a, type: 3}
+  portrait: {fileID: 21300000, guid: 986fa222e692636448b01e118237e3e3, type: 3}
+  prefab: {fileID: 1028194125286285868, guid: 5526449a970b5634aa31e2760ac0390f, type: 3}
   entryDuration: 0.15
   preAttackDelay: 0.05
   exitDuration: 0.2
   cooldown: 0
-  lbAttack: {fileID: 11400000, guid: aac8ce57874f27a4c9fa178a8ff65db7, type: 2}
-  rbAttack: {fileID: 11400000, guid: dc2db41aea7b7a84babbfbe4eb49b3d8, type: 2}
-  faceLeft: 0
+  lbAttack: {fileID: 11400000, guid: 81ee855370985de4f9dafd3000bca227, type: 2}
+  rbAttack: {fileID: 11400000, guid: 81ee855370985de4f9dafd3000bca227, type: 2}
+  faceLeft: 1
   entryEase: 6
   exitEase: 5
   flashOnEntry: 0

@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 [RequireComponent(typeof(StrikerInputHandler))]
 public class StrikerManager : MonoBehaviour
 {
     [Header("Striker Slots  (Up / Right / Down / Left)")]
-    [SerializeField] private StrikerData[] slots = new StrikerData[4];
+    [SerializeField] public StrikerData[] slots = new StrikerData[4];
 
     [Header("Settings")]
     [Tooltip("If true, LB calls the selected striker. If false, LB/RB call fixed slots " +

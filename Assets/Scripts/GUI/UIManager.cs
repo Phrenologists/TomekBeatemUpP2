@@ -49,6 +49,16 @@ public class UIManager : MonoBehaviour
             healthBar.value = healthBar.maxValue;
         }
     }
+    public void SetTeammatesUI(StrikerManager strikerManager)
+    {
+
+        for (int i = 0; i < strikerManager.slots.Length; i++)
+        {
+            teammates[i].SetTeammateIcon(strikerManager.slots[i].portrait);
+            //teammates[i].SetCurrentEnergy(strikerManager.slots[i].)
+        }
+    }
+
     public void SetMaxEnergy(float max)
     {
         maxEnergyValue.text = max.ToString();

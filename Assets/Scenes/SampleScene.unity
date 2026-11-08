@@ -5055,6 +5055,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1865615496}
+  - component: {fileID: 1865615497}
   m_Layer: 5
   m_Name: GUI Manager
   m_TagString: Untagged
@@ -5081,6 +5082,37 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1865615497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1865615495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b6ddfa8d34dda04ba3a68bf5919f986, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  battleUI: {fileID: 321057126}
+  progressSlider: {fileID: 1036246829}
+  progressValue: {fileID: 1375833501}
+  playerIcon: {fileID: 1228206177}
+  teammates:
+  - energySliderTeam: {fileID: 612066163}
+    iconTeam: {fileID: 1397625177}
+  - energySliderTeam: {fileID: 1206586431}
+    iconTeam: {fileID: 1666235881}
+  - energySliderTeam: {fileID: 279889604}
+    iconTeam: {fileID: 51235}
+  - energySliderTeam: {fileID: 1513028897}
+    iconTeam: {fileID: 16916343}
+  healthValue: {fileID: 601601162}
+  maxHealthValue: {fileID: 78059856}
+  healthBar: {fileID: 1608503469}
+  energyValue: {fileID: 698018422}
+  maxEnergyValue: {fileID: 684706317}
+  energyBar: {fileID: 1475214533}
 --- !u!1 &1907777501
 GameObject:
   m_ObjectHideFlags: 0
@@ -5165,6 +5197,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8c71e1da50cf39443b675d5f22137e46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1926525515 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1199882915621896459, guid: b7127b0f31795c446807c1b2a66bf26f, type: 3}
+  m_PrefabInstance: {fileID: 3874360706383290370}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1d26591740eb4a43af4cd0ad127cb51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1942088964 stripped
@@ -6526,6 +6569,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1199882915621896459, guid: b7127b0f31795c446807c1b2a66bf26f, type: 3}
+      propertyPath: GUIManager
+      value: 
+      objectReference: {fileID: 1865615495}
+    - target: {fileID: 3398795183118298036, guid: b7127b0f31795c446807c1b2a66bf26f, type: 3}
+      propertyPath: uiManager
+      value: 
+      objectReference: {fileID: 1865615497}
+    - target: {fileID: 3398795183118298036, guid: b7127b0f31795c446807c1b2a66bf26f, type: 3}
+      propertyPath: strikerManager
+      value: 
+      objectReference: {fileID: 1926525515}
+    - target: {fileID: 3398795183118298036, guid: b7127b0f31795c446807c1b2a66bf26f, type: 3}
+      propertyPath: uiManagerObject
+      value: 
+      objectReference: {fileID: 1865615495}
     - target: {fileID: 3593190062868791386, guid: b7127b0f31795c446807c1b2a66bf26f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

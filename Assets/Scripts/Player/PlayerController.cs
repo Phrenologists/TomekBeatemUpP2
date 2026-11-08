@@ -23,6 +23,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private PlayerStats stats;
     [SerializeField] private Animator animator;
     [SerializeField] private SpriteRenderer spriteRenderer;
+    [SerializeField] private UIManager uiManager;
+    [SerializeField] private StrikerManager strikerManager;
 
     [Header("2.5D Lane Bounds (world-space Y)")]
     [Tooltip("Top of the walkable lane (smallest Y value).")]
@@ -31,6 +33,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float groundYMax = 3f;
     [Header("Camera Bounds")]
     [SerializeField] private float playerHalfWidth = 0.3f;
+    
 
 
     private static readonly int AnimStateID = Animator.StringToHash("stateID");
@@ -90,6 +93,9 @@ public class PlayerController : MonoBehaviour
 
     private bool _touchedAWall;
 
+    private PlayerEnergy _energy;
+
+
     
 
     private void Awake()
@@ -102,6 +108,10 @@ public class PlayerController : MonoBehaviour
 
         _currentHealth = stats.maxHealth;
         _groundY = transform.position.y;
+
+        _energy = GetComponent<PlayerEnergy>();
+
+        SetInitialGUI();
 
         _attackHandler.OnAttackSequenceEnded += () =>
         {
@@ -129,6 +139,7 @@ public class PlayerController : MonoBehaviour
         if (_dashCooldownTimer > 0f) _dashCooldownTimer -= Time.deltaTime;
 
         TickState();
+        TickGUI();
 
         if (_jumpHeight < 0f)
         {
@@ -189,6 +200,23 @@ public class PlayerController : MonoBehaviour
 
         _input.ConsumeFrameInputs();
 
+    }
+
+
+    private void SetInitialGUI()
+    {
+        uiManager.SetPlayerIcon(stats.icon);
+        uiManager.SetMaxHealth(stats.maxHealth);
+        uiManager.SetCurrentHealth(_currentHealth);
+        uiManager.SetMaxEnergy(_energy.MaxEnergy);
+        uiManager.SetCurrentEnergy(_energy.CurrentEnergy);
+        uiManager.SetTeammatesUI(strikerManager);
+    }
+
+    private void TickGUI()
+    {
+        uiManager.SetCurrentHealth(_currentHealth);
+        uiManager.SetCurrentEnergy(_energy.CurrentEnergy);
     }
 
     

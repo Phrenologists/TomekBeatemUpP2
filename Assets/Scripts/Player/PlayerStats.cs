@@ -3,6 +3,11 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "BeatEmUp/PlayerStats")]
 public class PlayerStats : ScriptableObject
 {
+    [Header("Player info")]
+    public Sprite icon;
+    public string characterName;
+
+
     [Header("Movement")]
     public float walkSpeed = 5.0f;
     public float depthSpeed = 3.5f;

@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6a3551c3e53c74c9a5d7d5de3435fb, type: 3}
   m_Name: Player1
   m_EditorClassIdentifier: 
+  icon: {fileID: 21300000, guid: 4025db7f4cac351409b88dd2e8f2183c, type: 3}
+  characterName: Aries
   walkSpeed: 5
   depthSpeed: 3.5
   acceleration: 20
