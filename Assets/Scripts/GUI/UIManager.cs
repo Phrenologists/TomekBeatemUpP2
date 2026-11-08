@@ -6,6 +6,8 @@ using TMPro;
 
 public class UIManager : MonoBehaviour
 {
+    [Header("Dialogue UI")]
+    [SerializeField] private GameObject dialogueUI;
     [Header("Battle UI")]
     [SerializeField] private GameObject battleUI;
     [Header("Progress")]
@@ -24,6 +26,7 @@ public class UIManager : MonoBehaviour
     public void Awake()
     {
         progressSlider.maxValue = 100f;
+        ShowBattleUI();
     }
 
     //Methods for modifying values of UI elements
@@ -67,6 +70,18 @@ public class UIManager : MonoBehaviour
             energyBar.value = energyBar.maxValue;
         }
         
+    }
+
+    public void ShowBattleUI()
+    {
+        battleUI.SetActive(true);
+        dialogueUI.SetActive(false);
+    }
+
+    public void ShowDialogueUI()
+    {
+        dialogueUI.SetActive(true);
+        battleUI.SetActive(false);
     }
 }
 
